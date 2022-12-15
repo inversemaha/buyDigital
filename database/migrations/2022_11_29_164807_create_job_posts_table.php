@@ -16,7 +16,9 @@ class CreateJobPostsTable extends Migration
         Schema::create('job_posts', function (Blueprint $table) {
             $table->id();
             $table->string("title");
+            $table->Text("short_details");
             $table->longText("details");
+            $table->string("featured_image")->nullable();
             $table->date("last_apply_date");
             $table->boolean("is_published")->default(1);
             $table->timestamps();

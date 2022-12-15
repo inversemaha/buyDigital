@@ -60,6 +60,7 @@
 </head>
 
 <body class="sticky-header">
+    @include('sweetalert::alert')
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience and security.</p>
@@ -143,16 +144,17 @@
                         </nav>
                         <!-- End Mainmanu Nav -->
                     </div>
+
                     <div class="header-action">
                         <ul class="list-unstyled">
-                            <li class="sidemenu-btn d-lg-block d-none">
+                            {{--<li class="sidemenu-btn d-lg-block d-none">
                                 <button class="btn-wrap" data-bs-toggle="offcanvas"
                                         data-bs-target="#offcanvasMenuRight">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </button>
-                            </li>
+                            </li>--}}
                             <li class="mobile-menu-btn sidemenu-btn d-lg-none d-block">
                                 <button class="btn-wrap" data-bs-toggle="offcanvas"
                                         data-bs-target="#mobilemenu-popup">
@@ -224,7 +226,7 @@
                     </div>
                     <div class="col-xl-6 col-lg-7" data-sal="slide-left" data-sal-duration="800" data-sal-delay="100">
                         <div class="row">
-                            <div class="col-sm-4">
+                            {{--<div class="col-sm-4">
                                 <div class="footer-widget">
                                     <h6 class="widget-title">Services I</h6>
                                     <div class="footer-menu-link">
@@ -251,7 +253,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div>--}}
                             <div class="col-sm-4">
                                 <div class="footer-widget">
                                     <h6 class="widget-title">Contact</h6>
@@ -305,10 +307,10 @@
             <div class="row ">
                 <div class="col-lg-5 col-xl-6">
                     <ul class="main-navigation list-unstyled">
-                        <li><a href="/#about">About</a></li>
-                        <li><a href="/#services">Services</a></li>
-                        <li><a href="/#testimonial">Testimonial</a></li>
-                        <li><a href="/#team">Team</a></li>
+                        <li><a  onclick="closeNav()" href="/#about">About</a></li>
+                        <li><a id="serviceID" href="/#services">Services</a></li>
+                        <li><a id="testiID" href="/#testimonial">Testimonial</a></li>
+                        <li><a id="teamID" href="/#team">Team</a></li>
                         <li><a href="/sister-concern">Sister Concern</a></li>
                     </ul>
                 </div>
@@ -359,10 +361,14 @@
 <script src="/assets/js/vendor/tilt.js"></script>
 <script src="/assets/js/vendor/green-audio-player.min.js"></script>
 <script src="/assets/js/vendor/jquery.nav.js"></script>
-<script src="/assets/js/vendor/smooth-scroll.polyfills.min.js"></script>
 
 <!-- Site Scripts -->
 <script src="/assets/js/app.js"></script>
+    <script>
+        $('#offcanvasMenuRight').click(function() {
+            $('#aboutID').modal('hide');
+        });
+    </script>
 </body>
 
 </html>

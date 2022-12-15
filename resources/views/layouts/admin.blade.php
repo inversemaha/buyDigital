@@ -10,7 +10,7 @@
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description"/>
     <meta content="Themesbrand" name="author"/>
     <!-- App favicon -->
-    <link rel="shortcut icon" href="/admin-assets/images/favicon.ico">
+    <link rel="shortcut icon" href="/assets/media/favicon.png">
 
 
     <!--Swiper slider css-->
@@ -23,6 +23,7 @@
     <link href="/admin-assets/css/icons.min.css" rel="stylesheet" type="text/css"/>
     <!-- App Css-->
     <link href="/admin-assets/css/app.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/admin-assets/css/jquery.dataTables.css" rel="stylesheet" type="text/css"/>
     <!-- custom Css-->
     <link href="/admin-assets/css/custom.min.css" rel="stylesheet" type="text/css"/>
 
@@ -109,6 +110,7 @@
 
 <!-- include summernote css/js -->
 <script src="/admin-assets/js/jquery-3.6.0.min.js"></script>
+<script src="/admin-assets/js/jquery.dataTables.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 

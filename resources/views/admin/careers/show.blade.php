@@ -17,12 +17,12 @@
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                <h4 class="mb-sm-0">News</h4>
+                <h4 class="mb-sm-0">Careers</h4>
 
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a href="/admin/dashboard">Dashboards</a></li>
-                        <li class="breadcrumb-item active">News</li>
+                        <li class="breadcrumb-item active">Careers</li>
                     </ol>
                 </div>
 
@@ -43,7 +43,7 @@
                                 id="create-btn" data-bs-target="#addCountry"><i
                                 class="ri-add-line align-bottom me-1"></i> Add
                         </button>
-                        @include('admin.jobs.create')
+                        @include('admin.careers.create')
                     </h4>
                 </div><!-- end card header -->
 
@@ -56,22 +56,53 @@
                                 <thead class="table-light">
                                 <tr>
 
+                                    <th class="sort" data-sort="Country">#</th>
                                     <th class="sort" data-sort="Country">Title</th>
-                                    <th class="sort" data-sort="Image">Featured Image</th>
+                                    <th class="sort" data-sort="Details">Short Details</th>
                                     <th class="sort" data-sort="Details">Details</th>
-                                    <th class="sort" data-sort="Details">Type</th>
+                                    <th class="sort" data-sort="Image">Icon Image</th>
+                                    <th class="sort" data-sort="status">Last Apply Date</th>
                                     <th class="sort" data-sort="status">Status</th>
                                     <th class="sort" data-sort="action">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody class="list form-check-all">
-
-                                @foreach($result['data'] as $item)
+                                @php($i=1)
+                                @foreach($results as $item)
                                     <tr>
 
-
+                                        <td class="institute">{{$i++}}</td>
                                         <td class="institute">{{$item->title}}</td>
-                                        <td class="logo"><img src="{{$item->featured_image}}" width="100px">
+                                        <td class="logo">
+                                            <div class="edit">
+                                                <button class="btn btn-sm btn-info edit-item-btn"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#detailsModal{{$item->id}}">
+                                                    Details
+                                                </button>
+                                            </div>
+                                            <!-- Modal -->
+                                            <div class="modal fade zoomIn" id="detailsModal{{$item->id}}"
+                                                 tabindex="-1"
+                                                 aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"
+                                                                    id="btn-close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="mt-2 text-center">
+                                                                <p>{{$item->short_details}}</p>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end modal -->
+
                                         </td>
                                         <td class="logo">
                                             <div class="edit">
@@ -103,21 +134,15 @@
                                             </div>
                                             <!--end modal -->
 
-
-                                        </td>
-                                        <td>
-                                            @if($item->type == "jobs")
-                                                <span> News</span>
-                                            @else
-                                                <span> Notice</span>
-
-                                            @endif
                                         </td>
 
-
+                                        <td class="logo"><img src="{{$item->featured_image}}" width="100px">
+                                        <td class="institute">
+                                                    {{date('d-m-Y', strtotime($item->last_apply_date))}}
+                                        </td>
                                         <td class="status">
                                                     <span
-                                                        class="badge {{ ($item->is_active == 1) ? 'badge-soft-success' : 'badge-soft-danger'}} text-uppercase">{{ ($item->is_active == 1) ? 'Active' : 'Inactive'}}</span>
+                                                        class="badge {{ ($item->is_published == 1) ? 'badge-soft-success': 'badge-soft-danger' }} text-uppercase">{{ ($item->is_published == 1) ? 'Active' : 'Inactive'}}</span>
                                         </td>
 
                                         <td>
@@ -140,9 +165,8 @@
                                         </td>
                                     </tr>
 
-
-                                    @include('admin.jobs.edit')
-                                    @include('admin.jobs.delete')
+                                    @include('admin.careers.edit')
+                                    @include('admin.careers.delete')
 
                                 @endforeach
                                 </tbody>

@@ -68,10 +68,10 @@
                             <img src="assets/media/icon/icon-29.png" alt="icon">
                         </div>
                         <div class="content">
-                            <h5 class="title"><a href="#">Media Buying  </a></h5>
+                            <h5 class="title"><a href="#">Media Buying </a></h5>
                             <p>We design professional looking yet simple Logo. Our designs are search engine and user
                                 friendly.</p>
-                            <a href="#" class="more-btn">Find out more</a>
+                            <a href="/find-out-more" class="more-btn">Find out more</a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                             <h5 class="title"><a href="#">Creative Development</a></h5>
                             <p>We design professional looking yet simple websites. Our designs are search engine and
                                 user friendly.</p>
-                            <a href="#" class="more-btn">Find out more</a>
+                            <a href="/find-out-more" class="more-btn">Find out more</a>
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                             <h5 class="title"><a href="#">Social Media Planing</a></h5>
                             <p>We design professional looking yet Mobile Apps. Our designs are search engine
                                 and user friendly. </p>
-                            <a href="#" class="more-btn">Find out more</a>
+                            <a href="/find-out-more" class="more-btn">Find out more</a>
                         </div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                             <h5 class="title"><a href="#">Web Design</a></h5>
                             <p>From simple Content Management System to complex eCommerce developer, we cover it
                                 all.</p>
-                            <a href="#" class="more-btn">Find out more</a>
+                            <a href="/find-out-more" class="more-btn">Find out more</a>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                             <h5 class="title"><a href="#">Video production</a></h5>
                             <p>From simple Content Management System to complex eCommerce developer, we cover it
                                 all.</p>
-                            <a href="#" class="more-btn">Find out more</a>
+                            <a href="/find-out-more" class="more-btn">Find out more</a>
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                             <h5 class="title"><a href="#">Media Planning and Strategist</a></h5>
                             <p>From simple Content Management System to complex eCommerce developer, we cover it
                                 all.</p>
-                            <a href="#" class="more-btn">Find out more</a>
+                            <a href="/find-out-more" class="more-btn">Find out more</a>
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                             <h5 class="title"><a href="#">Influencer Marketing</a></h5>
                             <p>From simple Content Management System to complex eCommerce developer, we cover it
                                 all.</p>
-                            <a href="#" class="more-btn">Find out more</a>
+                            <a href="/find-out-more" class="more-btn">Find out more</a>
                         </div>
                     </div>
                 </div>
@@ -169,7 +169,7 @@
                             <h5 class="title"><a href="#">Website & App Development</a></h5>
                             <p>From simple Content Management System to complex eCommerce developer, we cover it
                                 all.</p>
-                            <a href="#" class="more-btn">Find out more</a>
+                            <a href="/find-out-more" class="more-btn">Find out more</a>
                         </div>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
                             <h5 class="title"><a href="#">AD Network</a></h5>
                             <p>From simple Content Management System to complex eCommerce developer, we cover it
                                 all.</p>
-                            <a href="#" class="more-btn">Find out more</a>
+                            <a href="/find-out-more" class="more-btn">Find out more</a>
                         </div>
                     </div>
                 </div>
@@ -197,7 +197,7 @@
                             <h5 class="title"><a href="#">ATL/ BTL Support or Offline activation</a></h5>
                             <p>From simple Content Management System to complex eCommerce developer, we cover it
                                 all.</p>
-                            <a href="#" class="more-btn">Find out more</a>
+                            <a href="/find-out-more" class="more-btn">Find out more</a>
                         </div>
                     </div>
                 </div>
@@ -211,7 +211,7 @@
                             <h5 class="title"><a href="#">SEO</a></h5>
                             <p>From simple Content Management System to complex eCommerce developer, we cover it
                                 all.</p>
-                            <a href="#" class="more-btn">Find out more</a>
+                            <a href="/find-out-more" class="more-btn">Find out more</a>
                         </div>
                     </div>
                 </div>
@@ -225,7 +225,7 @@
                             <h5 class="title"><a href="#">SEM</a></h5>
                             <p>From simple Content Management System to complex eCommerce developer, we cover it
                                 all.</p>
-                            <a href="#" class="more-btn">Find out more</a>
+                            <a href="/find-out-more" class="more-btn">Find out more</a>
                         </div>
                     </div>
                 </div>
@@ -283,7 +283,7 @@
                 <span class="subtitle">Meet Our</span>
                 <h3 class="title">Digital Business Team</h3>
             </div>
-            <div class="row align-items-center">
+            {{--<div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="team-details-content">
                         <h2 class="title">Ralph Edwards</h2>
@@ -294,13 +294,125 @@
                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                         </ul>
-                        <p>Phasellus in libero et nunc malesuada tincidunt. Morbi auctor tristique semper. Nunc condimentum dapibus felis, non volutpat ligula dapibus non. Quisque varius massa magna, eget iaculis ipsum tincidunt sed. Sed tempus magna id nunc posuere auctor. Morbi aliquam a justo eget cursus. Donec at quam id ex mollis dapibus eget ac sem. Maecenas pharetra bibendum massa, ut tincidunt lectus.</p>
+                        <p>Phasellus in libero et nunc malesuada tincidunt. Morbi auctor tristique semper. Nunc
+                            condimentum dapibus felis, non volutpat ligula dapibus non. Quisque varius massa magna, eget
+                            iaculis ipsum tincidunt sed. Sed tempus magna id nunc posuere auctor. Morbi aliquam a justo
+                            eget cursus. Donec at quam id ex mollis dapibus eget ac sem. Maecenas pharetra bibendum
+                            massa, ut tincidunt lectus.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="team-details-thumb">
                         <img class="paralax-image" src="assets/media/team/team-9.png" alt="Thumbnail">
                     </div>
+                </div>
+            </div>--}}
+            <div class="row align-items-center">
+                <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="team-details-content">
+                                        <h2 class="title">Ralph Edwards</h2>
+                                        <span class="subtitle">Communications Strategist</span>
+                                        <ul class="social-share list-unstyled">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                        <p>Phasellus in libero et nunc malesuada tincidunt. Morbi auctor tristique
+                                            semper. Nunc condimentum dapibus felis, non volutpat ligula dapibus non.
+                                            Quisque varius massa magna, eget iaculis ipsum tincidunt sed. Sed tempus
+                                            magna id nunc posuere auctor. Morbi aliquam a justo eget cursus. Donec at
+                                            quam id ex mollis dapibus eget ac sem. Maecenas pharetra bibendum massa, ut
+                                            tincidunt lectus.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="team-details-thumb">
+                                        <img src="assets/media/team/team-9.png" alt="Los Angeles"
+                                             class="d-block paralax-image" style="width:100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="team-details-content">
+                                        <h2 class="title">Chuk Naris</h2>
+                                        <span class="subtitle">Communications Strategist</span>
+                                        <ul class="social-share list-unstyled">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                        <p>Phasellus in libero et nunc malesuada tincidunt. Morbi auctor tristique
+                                            semper. Nunc condimentum dapibus felis, non volutpat ligula dapibus non.
+                                            Quisque varius massa magna, eget iaculis ipsum tincidunt sed. Sed tempus
+                                            magna id nunc posuere auctor. Morbi aliquam a justo eget cursus. Donec at
+                                            quam id ex mollis dapibus eget ac sem. Maecenas pharetra bibendum massa, ut
+                                            tincidunt lectus.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="team-details-thumb">
+                                        <img src="assets/media/team/team-2.png" alt="Los Angeles"
+                                             class="d-block paralax-image" style="width:100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="team-details-content">
+                                        <h2 class="title">Edwards Ralph </h2>
+                                        <span class="subtitle">Communications Strategist</span>
+                                        <ul class="social-share list-unstyled">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                        <p>Phasellus in libero et nunc malesuada tincidunt. Morbi auctor tristique
+                                            semper. Nunc condimentum dapibus felis, non volutpat ligula dapibus non.
+                                            Quisque varius massa magna, eget iaculis ipsum tincidunt sed. Sed tempus
+                                            magna id nunc posuere auctor. Morbi aliquam a justo eget cursus. Donec at
+                                            quam id ex mollis dapibus eget ac sem. Maecenas pharetra bibendum massa, ut
+                                            tincidunt lectus.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="team-details-thumb">
+                                        <img src="assets/media/team/team-4.png" alt="Los Angeles"
+                                             class="d-block paralax-image" style="width:100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -418,7 +530,8 @@
                     <div class="testimonial-grid active">
                         <!-- <span class="social-media"><img src="assets/media/icon/yelp-2.png" alt="Yelp"></span> -->
                         <p>“
-                            Love working collaboratively with Buy Digital. Thanks buy digital for being authentic and enthusiastic !
+                            Love working collaboratively with Buy Digital. Thanks buy digital for being authentic and
+                            enthusiastic !
                             ”</p>
                         <div class="author-info">
                             <div class="thumb">
@@ -434,7 +547,8 @@
                     <div class="testimonial-grid">
                         <!-- <span class="social-media"><img src="assets/media/icon/google-2.png" alt="google"></span> -->
                         <p>“
-                            Highly recommended! Detail-oriented, considerate to clients, insightful and providing top-notch services.
+                            Highly recommended! Detail-oriented, considerate to clients, insightful and providing
+                            top-notch services.
                             ”</p>
                         <div class="author-info">
                             <div class="thumb">
@@ -450,7 +564,8 @@
                     <div class="testimonial-grid">
                         <!-- <span class="social-media"><img src="assets/media/icon/google-2.png" alt="google"></span> -->
                         <p>“
-                            The Buy Digital team is very easy to work with! They are well-organized, responsive and provide good services.
+                            The Buy Digital team is very easy to work with! They are well-organized, responsive and
+                            provide good services.
                             ”</p>
                         <div class="author-info">
                             <div class="thumb">
@@ -466,7 +581,8 @@
                     <div class="testimonial-grid">
                         <!-- <span class="social-media"><img src="assets/media/icon/google-2.png" alt="google"></span> -->
                         <p style="font-size: 20px !important;">“
-                            A good experience working with the team of buy digital. The team helped me get exactly what I was looking for! Indeed overall is a pretty good agency to work with!
+                            A good experience working with the team of buy digital. The team helped me get exactly what
+                            I was looking for! Indeed overall is a pretty good agency to work with!
                             ”</p>
                         <div class="author-info">
                             <div class="thumb">

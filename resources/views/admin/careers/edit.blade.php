@@ -9,7 +9,7 @@
                         data-bs-dismiss="modal" aria-label="Close"
                         id="close-modal"></button>
             </div>
-            <form action="{{ route('jobs.update', $item ) }}"
+            <form action="{{ route('careers.update', $item ) }}"
                   method="post" enctype="multipart/form-data">
                 <div class="modal-body">
                     @csrf
@@ -23,6 +23,19 @@
                                placeholder="Enter Title"
                                value="{{$item->title}}" required
                                name="title"/>
+                        <input type="hidden" id="id"
+                               class="form-control"
+                               value="{{$item->id}}"
+                               name="id"/>
+                    </div>
+                    <div class="mb-3">
+
+                        <label for="title" class="form-label">Short Details </label>
+                        <input type="text" id="short_details"
+                               class="form-control"
+                               placeholder="Short details"
+                               value="{{$item->short_details}}" required
+                               name="short_details"/>
                     </div>
                     <div class="mb-3">
 
@@ -33,7 +46,6 @@
                                   placeholder="Enter Details here.."
                                   name="details">{{$item->details}}</textarea>
                     </div>
-
                     <div class="mb-3">
                         <label for="logo" class="form-label">Featured
                             Image</label>
@@ -41,37 +53,21 @@
                                name="image"/>
 
                     </div>
-                    <div class="mb-3">
-                        <label for="logo" class="form-label">Category</label>
-                        <select class="form-control" data-trigger
-                                name="category_id" id="status-field">
 
-                            <option value="">All</option>
-                            @foreach(getBlogCategories() as $res)
-                                <option value="{{$res->id}}" @if($item->category_id == $res->id) selected @endif >{{$res->category_title}}</option>
-                            @endforeach
-                        </select>
+                    <div class="mb-3">
+                        <label for="logo" class="form-label">Last Apply Date</label>
+                        <input class="form-control" data-trigger type="text"
+                               name="last_apply_date" value="{{$item->last_apply_date}}">
 
                     </div>
-                    <div class="mb-3">
-                        <label for="logo" class="form-label">Type</label>
-                        <select class="form-control" data-trigger
-                                name="type" id="status-field">
-
-                            <option value="news" @if($item->type == "jobs") selected @endif>News</option>
-                            <option value="notice" @if($item->type == "notice") selected @endif>Notice</option>
-                        </select>
-
-                    </div>
-
                     <div>
                         <label for="status-field"
                                class="form-label">Status</label>
                         <select class="form-control" data-trigger
-                                name="is_active" id="status-field">
+                                name="is_published" id="status-field">
 
-                            <option value="1" @if($item->is_active == true) selected @endif>Active</option>
-                            <option value="0" @if($item->is_active == false) selected @endif>Inactive</option>
+                            <option value="1" @if($item->is_published == true) selected @endif>Active</option>
+                            <option value="0" @if($item->is_published == false) selected @endif>Inactive</option>
                         </select>
                     </div>
                 </div>

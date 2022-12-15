@@ -2,15 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Country;
-use App\Models\News;
+use App\Models\JobPost;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use Intervention\Image\Facades\Image;
 use RealRashid\SweetAlert\Facades\Alert;
 
-class NewsController extends Controller
+class CareersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,11 +18,10 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $data['page_title'] = "Country Show";
-        $data['data'] = News::orderBy('created_at', "DESC")->get();
+        $results= JobPost::orderBy('id', 'DESC')->get();
 
 
-        return view("admin.jobs.show")->with("result", $data);
+        return view("admin.careers.show")->with("results", $results);
     }
 
     /**
@@ -46,27 +44,29 @@ class NewsController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'title' => 'required',
+            'details' => 'required',
+            'last_apply_date' => 'required',
         ]);
 
         if ($validator->fails()) {
-            Alert::error('Sorry! ', " Name field is required");
+            Alert::error('Sorry! ', " Required field is empty");
             return back()->withInput();
         }
-        // return $request->all();
+         //return $request->all();
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $image_name = time() . '.' . $image->getClientOriginalExtension();
-            $destinationPath = public_path('/images/blog');
+            $destinationPath = public_path('/uploads/career/');
             $image->move($destinationPath, $image_name);
-            $request->request->add(['featured_image' => '/images/blog/' . $image_name]);
+            $request->request->add(['featured_image' => '/uploads/career/' . $image_name]);
 
         }
 
-        $request['author_id']= Auth::user()->id;
+       // $request['author_id']= Auth::user()->id;
 
         try {
-            News::create($request->except('_token','image'));
-            Alert::success('Congratulations! ', "Your data Created");
+            JobPost::create($request->except('_token','image'));
+            Alert::success('Congratulations! ', "Job post is Created");
             return back()->withInput();
         } catch (\Exception $exception) {
             Alert::error('Sorry! ', $exception->getMessage());
@@ -77,22 +77,22 @@ class NewsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\News  $news
+     * @param  \App\Models\JobPost  $jobPost
      * @return \Illuminate\Http\Response
      */
-    public function show(News $news)
+    /*public function show(JobPost $jobPost)
     {
-        $news= News::all();
-        return  view('admin.jobs.show')->with('jobs',$news );
-    }
+        $jobPost= JobPost::all();
+        return  view('admin.careers.show')->with('careers',$jobPost );
+    }*/
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\News  $news
+     * @param  \App\Models\JobPost  $jobPost
      * @return \Illuminate\Http\Response
      */
-    public function edit(News $news)
+    public function edit(JobPost $jobPost)
     {
         //
     }
@@ -101,26 +101,26 @@ class NewsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\News  $news
+     * @param  \App\Models\JobPost  $jobPost
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, News $news)
+    public function update(Request $request, $id)
     {
         // return $request->all();
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $image_name = time() . '.' . $image->getClientOriginalExtension();
-            $destinationPath = public_path('/images/blog');
+            $destinationPath = public_path('/uploads/career/');
             $image->move($destinationPath, $image_name);
-            $request->request->add(['featured_image' => '/images/blog/' . $image_name]);
+            $request->request->add(['featured_image' => '/uploads/career/' . $image_name]);
 
         }
 
-        $request['author_id']= Auth::user()->id;
+        /*  $request['author_id']= Auth::user()->id;*/
 
         try {
-            News::where('id', $news->id)->update($request->except('_token', 'image', '_method'));
-            Alert::success('Congratulations! ', "Your data Updated");
+            JobPost::where('id', $id)->update($request->except('_token', 'image','_method'));
+            Alert::success('Congratulations! ', "Job post data Updated");
             return back()->withInput();
         } catch (\Exception $exception) {
             Alert::error('Sorry! ', $exception->getMessage());
@@ -131,14 +131,14 @@ class NewsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\News  $news
+     * @param  \App\Models\JobPost  $jobPost
      * @return \Illuminate\Http\Response
      */
     public function destroy($id )
     {
         try {
-            News::where('id', $id)->delete();
-            Alert::success('Congratulations! ', "Your data Deleted");
+            JobPost::where('id', $id)->delete();
+            Alert::success('Congratulations! ', "Your Job data Deleted");
             return back()->withInput();
         } catch (\Exception $exception) {
             Alert::error('Sorry! ', $exception->getMessage());

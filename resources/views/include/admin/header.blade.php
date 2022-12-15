@@ -6,19 +6,19 @@
                 <div class="navbar-brand-box horizontal-logo">
                     <a href="/admin/dashboard" class="logo logo-dark">
                         <span class="logo-sm">
-                            <img src="/images/logo.png" alt="" height="22">
+                            <img src="/assets/media/logo.png" alt="" height="22">
                         </span>
                         <span class="logo-lg">
-                            <img src="/images/logo.png" alt="" height="17">
+                            <img src="/assets/media/logo.png" alt="" height="17">
                         </span>
                     </a>
 
                     <a href="/admin/dashboard" class="logo logo-light">
                         <span class="logo-sm">
-                            <img src="/images/logo.png" alt="" height="22">
+                            <img src="/assets/media/logo.png" alt="" height="22">
                         </span>
                         <span class="logo-lg">
-                            <img src="/images/logo.png" alt="" height="17">
+                            <img src="/assets/media/logo.png" alt="" height="17">
                         </span>
                     </a>
                 </div>

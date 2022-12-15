@@ -17,7 +17,33 @@ function getBlogCategories()
 {
     return BlogCategory::all();
 }
+function getOrderStatus()
+{
+    return  $array=[
+        '0'=> "Pending",
+        '1'=> "Accepted",
+        '2'=> "Processing",
+        '3'=> "Shortlisted",
+        '4'=> "Finalize",
+        '5'=> "Canceled",
+    ];
+}
+function getOrderStatusIdToValue($id)
+{
+    if ($id == null) {
+        return "Pending";
+    }
+    $array=[
+        '0'=> "Pending",
+        '1'=> "Accepted",
+        '2'=> "Processing",
+        '3'=> "Shortlisted",
+        '4'=> "Finalize",
+        '5'=> "Canceled",
+    ];
+    return $array[$id];
 
+}
 function getNameFromId($id)
 {
 
@@ -73,6 +99,11 @@ function getLoginHistory()
 function getCopyright()
 {
     return "Qubit Solution lab";
+}
+
+function getDummydetails()
+{
+    return " s tellus enim vitae enim. Nam rhoncus enim diam, a consequat nisi bibendum pulvinar. Donec aliquam lectus vitae ante pulvinar facilisis. Curabitur seddolor pellentesque, a eleifend libero pharetra. Mauris neque sem est.";
 }
 
 function getDummyNews()

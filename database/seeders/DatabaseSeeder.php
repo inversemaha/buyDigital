@@ -8,6 +8,8 @@ use App\Models\BlogCategory;
 use App\Models\Department;
 use App\Models\Event;
 use App\Models\Gallery;
+use App\Models\JobApply;
+use App\Models\JobPost;
 use App\Models\News;
 use App\Models\User;
 use Illuminate\Database\Seeder;
@@ -49,64 +51,234 @@ class DatabaseSeeder extends Seeder
         ]);
 
 
-        Gallery::create([
+        JobPost::create([
             'title' => "Title",
-            'featured_image' => "/uploads/gallery.jpg",
-        ]);
-
-        Gallery::create([
-            'title' => "Title",
-            'featured_image' => "/uploads/gallery.jpg",
-        ]);
-
-        Gallery::create([
-            'title' => "Title",
-            'featured_image' => "/uploads/gallery.jpg",
-        ]);
-        Gallery::create([
-            'title' => "Title",
-            'featured_image' => "/uploads/gallery.jpg",
-        ]);
-        Gallery::create([
-            'title' => "Title",
-            'featured_image' => "/uploads/gallery.jpg",
-        ]);
-        Gallery::create([
-            'title' => "Title",
-            'featured_image' => "/uploads/gallery.jpg",
-        ]);
-        Gallery::create([
-            'title' => "Title",
-            'featured_image' => "/uploads/gallery.jpg",
-        ]);
-        Gallery::create([
-            'title' => "Title",
-            'featured_image' => "/uploads/gallery.jpg",
-        ]);
-
-        BlogCategory::create([
-            'category_title' => "Category 1",
-            'featured_image' => "/uploads/news.png",
-        ]);
-        BlogCategory::create([
-            'category_title' => "Category 2",
-            'featured_image' => "/uploads/news.png",
-        ]);
-
-        News::create([
-            'title' => "Etiam laoreet sem eget eros rhoncus",
-            'featured_image' => "/uploads/news.png",
+            'short_details' => getDummydetails(),
             'details' => getDummyNews(),
+            'featured_image' => "/uploads/career/1.png",
+            'last_apply_date' => "2022/12/12",
+            'is_published' => "1",
         ]);
-        News::create([
-            'title' => "Etiam laoreet sem eget eros rhoncus",
-            'featured_image' => "/uploads/news.png",
+        JobPost::create([
+            'title' => "Title",
+            'short_details' => getDummydetails(),
             'details' => getDummyNews(),
+            'featured_image' => "/uploads/career/1.png",
+            'last_apply_date' => "2022/12/11",
+            'is_published' => "1",
         ]);
-        News::create([
-            'title' => "Etiam laoreet sem eget eros rhoncus",
-            'featured_image' => "/uploads/news.png",
+        JobPost::create([
+            'title' => "Title",
+            'short_details' => getDummydetails(),
             'details' => getDummyNews(),
+            'featured_image' => "/uploads/career/1.png",
+            'last_apply_date' => "2022/12/10",
+            'is_published' => "1",
+        ]);
+        JobPost::create([
+            'title' => "Title",
+            'short_details' => getDummydetails(),
+            'details' => getDummyNews(),
+            'featured_image' => "/uploads/career/1.png",
+            'last_apply_date' => "2022/12/9",
+            'is_published' => "1",
+        ]);
+        JobPost::create([
+            'title' => "Title",
+            'short_details' => getDummydetails(),
+            'details' => getDummyNews(),
+            'featured_image' => "/uploads/career/1.png",
+            'last_apply_date' => "2022/12/8",
+            'is_published' => "1",
+        ]);
+        JobPost::create([
+            'title' => "Title",
+            'short_details' => getDummydetails(),
+            'details' => getDummyNews(),
+            'featured_image' => "/uploads/career/1.png",
+            'last_apply_date' => "2022/12/7",
+            'is_published' => "1",
+        ]);
+        JobPost::create([
+            'title' => "Title",
+            'short_details' => getDummydetails(),
+            'details' => getDummyNews(),
+            'featured_image' => "/uploads/career/1.png",
+            'last_apply_date' => "2022/12/5",
+            'is_published' => "1",
+        ]);
+        JobPost::create([
+            'title' => "Title",
+            'short_details' => getDummydetails(),
+            'details' => getDummyNews(),
+            'featured_image' => "/uploads/career/1.png",
+            'last_apply_date' => "2022/12/5",
+            'is_published' => "1",
+        ]);
+        JobPost::create([
+            'title' => "Title",
+            'short_details' => getDummydetails(),
+            'details' => getDummyNews(),
+            'featured_image' => "/uploads/career/1.png",
+            'last_apply_date' => "2022/12/4",
+            'is_published' => "1",
+        ]);
+        JobPost::create([
+            'title' => "Title",
+            'short_details' => getDummydetails(),
+            'details' => getDummyNews(),
+            'featured_image' => "/uploads/career/1.png",
+            'last_apply_date' => "2022/12/3",
+            'is_published' => "1",
+        ]);
+        JobPost::create([
+            'title' => "Title",
+            'short_details' => getDummydetails(),
+            'details' => getDummyNews(),
+            'featured_image' => "/uploads/career/1.png",
+            'last_apply_date' => "2022/12/2",
+            'is_published' => "1",
+        ]);
+        JobPost::create([
+            'title' => "Title",
+            'short_details' => getDummydetails(),
+            'details' => getDummyNews(),
+            'featured_image' => "/uploads/career/1.png",
+            'last_apply_date' => "2022/12/1",
+            'is_published' => "1",
+        ]);
+
+        Applicant::create([
+            'name' => "Badhon",
+            'phone' => "01236547893",
+            'email' => "examplte@gmail.com",
+            'password' => Hash::make('123456'),
+        ]);
+
+        Applicant::create([
+            'name' => "Motiur",
+            'phone' => "01236547891",
+            'email' => "examplte2@gmail.com",
+            'password' => Hash::make('123456'),
+        ]);
+
+        Applicant::create([
+            'name' => "Maha",
+            'phone' => "01236547894",
+            'email' => "examplte2@gmail.com",
+            'password' => Hash::make('123456'),
+        ]);
+
+        Applicant::create([
+            'name' => "Saiful",
+            'phone' => "01236547898",
+            'email' => "examplte3@gmail.com",
+            'password' => Hash::make('123456'),
+        ]);
+
+        JobApply::create([
+            'job_id' => "1",
+            'applicant_id' => "1",
+            'cv' => "",
+            'status' => "0",
+        ]);
+
+        JobApply::create([
+            'job_id' => "2",
+            'applicant_id' => "1",
+            'cv' => "",
+            'status' => "0",
+        ]);
+
+        JobApply::create([
+            'job_id' => "3",
+            'applicant_id' => "1",
+            'cv' => "",
+            'status' => "0",
+        ]);
+
+        JobApply::create([
+            'job_id' => "4",
+            'applicant_id' => "1",
+            'cv' => "",
+            'status' => "0",
+        ]);
+
+        JobApply::create([
+            'job_id' => "5",
+            'applicant_id' => "2",
+            'cv' => "",
+            'status' => "0",
+        ]);
+
+        JobApply::create([
+            'job_id' => "6",
+            'applicant_id' => "2",
+            'cv' => "",
+            'status' => "0",
+        ]);
+
+        JobApply::create([
+            'job_id' => "7",
+            'applicant_id' => "2",
+            'cv' => "",
+            'status' => "0",
+        ]);
+
+        JobApply::create([
+            'job_id' => "8",
+            'applicant_id' => "2",
+            'cv' => "",
+            'status' => "0",
+        ]);
+
+        JobApply::create([
+            'job_id' => "9",
+            'applicant_id' => "2",
+            'cv' => "",
+            'status' => "0",
+        ]);
+
+        JobApply::create([
+            'job_id' => "10",
+            'applicant_id' => "3",
+            'cv' => "",
+            'status' => "0",
+        ]);
+
+        JobApply::create([
+            'job_id' => "11",
+            'applicant_id' => "3",
+            'cv' => "",
+            'status' => "0",
+        ]);
+
+        JobApply::create([
+            'job_id' => "12",
+            'applicant_id' => "2",
+            'cv' => "",
+            'status' => "0",
+        ]);
+
+        JobApply::create([
+            'job_id' => "12",
+            'applicant_id' => "1",
+            'cv' => "",
+            'status' => "0",
+        ]);
+
+        JobApply::create([
+            'job_id' => "10",
+            'applicant_id' => "2",
+            'cv' => "",
+            'status' => "0",
+        ]);
+
+        JobApply::create([
+            'job_id' => "9",
+            'applicant_id' => "1",
+            'cv' => "",
+            'status' => "0",
         ]);
 
 

@@ -36,76 +36,21 @@
     <div class="section section-padding" id="services">
         <div class="container">
             <div class="row">
+                @foreach($result as $res)
                 <div class="col-lg-6 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800"
                      data-sal-delay="100">
                     <div class="services-grid service-style-2">
                         <div class="thumbnail">
-                            <img src="/assets/media/icon/icon-29.png" alt="icon">
+                            <img src="{{$res->featured_image}}" alt="icon">
                         </div>
                         <div class="content">
-                            <h5 class="title"><a href="#">Media Buying  </a></h5>
-                            <p>We design professional looking yet simple Logo. Our designs are search engine and user
-                                friendly.</p>
-                            <a href="/career/board/details" class="more-btn">View Details</a>
+                            <h5 class="title"><a href="#">{{$res->title}} </a></h5>
+                            <p>{{$res->short_details}}</p>
+                            <a href="/career/board/details/{{$res->id}}" class="more-btn">View Details</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800"
-                     data-sal-delay="200">
-                    <div class="services-grid service-style-2">
-                        <div class="thumbnail">
-                            <img src="/assets/media/icon/icon-27.png" alt="icon">
-                        </div>
-                        <div class="content">
-                            <h5 class="title"><a href="#">Creative Development</a></h5>
-                            <p>We design professional looking yet simple websites. Our designs are search engine and
-                                user friendly.</p>
-                            <a href="/career/board/details" class="more-btn">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800"
-                     data-sal-delay="300">
-                    <div class="services-grid service-style-2 active">
-                        <div class="thumbnail">
-                            <img src="/assets/media/icon/icon-28.png" alt="icon">
-                        </div>
-                        <div class="content">
-                            <h5 class="title"><a href="#">Social Media Planing</a></h5>
-                            <p>We design professional looking yet Mobile Apps. Our designs are search engine
-                                and user friendly. </p>
-                            <a href="/career/board/details" class="more-btn">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800"
-                     data-sal-delay="100">
-                    <div class="services-grid service-style-2">
-                        <div class="thumbnail">
-                            <img src="/assets/media/icon/icon-4.png" alt="icon">
-                        </div>
-                        <div class="content">
-                            <h5 class="title"><a href="#">Web Design</a></h5>
-                            <p>From simple Content Management System to complex eCommerce developer, we cover it
-                                all.</p>
-                            <a href="/career/board/details" class="more-btn">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800"
-                     data-sal-delay="200">
-                    <div class="services-grid service-style-2">
-                        <div class="thumbnail">
-                            <img src="/assets/media/icon/icon-30.png" alt="icon">
-                        </div>
-                        <div class="content">
-                            <h5 class="title"><a href="#">Video production</a></h5>
-                            <p>From simple Content Management System to complex eCommerce developer, we cover it
-                                all.</p>
-                            <a href="/career/board/details" class="more-btn">View Details</a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
 
             </div>
         </div>

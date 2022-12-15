@@ -16,7 +16,7 @@ class CreateApplicantsTable extends Migration
         Schema::create('applicants', function (Blueprint $table) {
             $table->id();
             $table->string("name");
-            $table->string("phone")->unique();
+            $table->string("phone");
             $table->string("email")->nullable();
             $table->string("password")->default(\Illuminate\Support\Facades\Hash::make("123456"));
             $table->timestamps();

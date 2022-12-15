@@ -18,7 +18,7 @@
                 </div>
                 <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
                     <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
-                    <form action="{{ route('jobs.destroy', $item ) }}" method="POST">
+                    <form action="{{ route('careers.destroy', $item ) }}" method="POST">
                         @csrf
 
                         @method('DELETE')

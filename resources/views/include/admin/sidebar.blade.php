@@ -5,19 +5,19 @@
         <!-- Dark Logo-->
         <a href="/admin/dashboard" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="/images/logo.png" alt="" height="60">
+                        <img src="/assets/media/logo.png" alt="" height="50">
                     </span>
             <span class="logo-lg">
-                        <img src="/images/logo.png" alt="" height="60">
+                        <img src="/assets/media/logo.png" alt="" height="50">
                     </span>
         </a>
         <!-- Light Logo-->
         <a href="/admin/dashboard" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="/images/logo.png" alt="" height="60">
+                        <img src="/assets/media/logo.png" alt="" height="50">
                     </span>
             <span class="logo-lg">
-                        <img src="/images/logo.png" alt="" height="60">
+                        <img src="/assets/media/logo.png" alt="" height="50">
                     </span>
         </a>
         <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
@@ -45,18 +45,18 @@
                 @if (Auth::user()->is_admin)
 
                     <li class="nav-item ">
-                        <a class="nav-link menu-link {{ Request::is('/news') ? 'active' : null }}"
-                           href="/news"
+                        <a class="nav-link menu-link {{ Request::is('/careers') ? 'active' : null }}"
+                           href="/admin/careers"
                            aria-expanded="false" aria-controls="sidebarDashboards">
-                            <i class="mdi mdi-list-status"></i> <span data-key="t-dashboards">News</span>
+                            <i class="mdi mdi-list-status"></i> <span data-key="t-dashboards">Careers</span>
                         </a>
 
                     </li> <!-- end Dashboard Menu -->
                     <li class="nav-item ">
-                        <a class="nav-link menu-link {{ Request::is('/galleries') ? 'active' : null }}"
-                           href="/galleries"
+                        <a class="nav-link menu-link {{ Request::is('/job/appliers') ? 'active' : null }}"
+                           href="/admin/job/appliers"
                            aria-expanded="false" aria-controls="sidebarDashboards">
-                            <i class="mdi mdi-view-gallery"></i> <span data-key="t-dashboards">Galleries</span>
+                            <i class="mdi mdi-airballoon"></i> <span data-key="t-dashboards">Job Appliers</span>
                         </a>
 
                     </li> <!-- end Dashboard Menu -->

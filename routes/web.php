@@ -2,8 +2,11 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminRoleController;
+use App\Http\Controllers\ApplicantController;
+use App\Http\Controllers\CareersController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\JobApplyController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\WebApiController;
 use Illuminate\Support\Facades\Route;
@@ -24,14 +27,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [Controller::class, 'home']);
 
 Route::get('/career/board', [Controller::class, 'careerBoard']);
-Route::get('/career/board/details', [Controller::class, 'careerDetails']);
+Route::get('/career/board/details/{id}', [Controller::class, 'careerDetails']);
+Route::post('/career/application/apply', [ApplicantController::class, 'applyJob']);
 Route::get('/sister-concern', [Controller::class, 'sisterConcern']);
 Route::get('/privacy-policy', [Controller::class, 'privacyPolicy']);
 Route::get('/terms-of-use', [Controller::class, 'termsOfUse']);
+Route::get('/find-out-more', [Controller::class, 'findOutMore']);
 
 
-/*Student Area Start*/
-Route::group(['middleware' => 'user'], function () {
+/*Applicant Area Start*/
+Route::group(['middleware' => 'applicant'], function () {
 
     Route::any('/profile', [Controller::class, 'profile']);
 });
@@ -55,14 +60,14 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::post('/password-update', [AdminController::class, 'passwordUpdate']);
     Route::get('/logout', [AdminController::class, 'logout']);
 
+//careers Management
+    Route::resource('/careers', CareersController::class);
+    Route::resource('/job/appliers', JobApplyController::class);
+    Route::get('/applicant-status-update/{id}/{status}', [JobApplyController::class, 'applicantStatusUpdate']);
+
 });
 
 Route::group(['middleware' => 'admin'], function () {
-
-//news Management
-    Route::resource('/news', NewsController::class);
-    Route::resource('/galleries', GalleryController::class);
-    Route::resource('/events', EventController::class);
 
     Route::get('/admin/admins', [AdminRoleController::class, 'show']);
     Route::get('/admin/edit/{id}', [AdminRoleController::class, 'edit']);

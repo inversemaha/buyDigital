@@ -277,11 +277,11 @@
                                                                     <i class="ri-smartphone-line"></i>
                                                                 </div>
                                                             </div>
-                                                           {{-- @foreach(getLoginHistoery() as $res)
-                                                            <div class="flex-grow-1 ms-3">
-                                                                <h6>{{$res->created_at}}</h6>
-                                                            </div>
-                                                            @endforeach--}}
+                                                            @foreach(getLoginHistory() as $res)
+                                                                <div class="flex-grow-1 ms-3">
+                                                                    <h6>{{$res->created_at}}</h6>
+                                                                </div>
+                                                            @endforeach
 
                                                         </div>
 

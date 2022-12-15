@@ -11,7 +11,7 @@ return [
 
     'backup_successful_subject' => 'Successful new backup of :application_name',
     'backup_successful_subject_title' => 'Successful new backup!',
-    'backup_successful_body' => 'Great news, a new backup of :application_name was successfully created on the disk named :disk_name.',
+    'backup_successful_body' => 'Great careers, a new backup of :application_name was successfully created on the disk named :disk_name.',
 
     'cleanup_failed_subject' => 'Cleaning up the backups of :application_name failed.',
     'cleanup_failed_body' => 'An error occurred while cleaning up the backups of :application_name',

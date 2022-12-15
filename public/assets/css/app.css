@@ -64,9 +64,11 @@ STYLESHEET INDEXING
 
 :root {
     --color-primary: #5956E9;
+    --color-yellow: #c3a12b;
     --color-white: #ffffff;
     --color-black: #000000;
     --color-light: #ECF2F6;
+    --color-brand: #F5C0C8;
     --color-dark: #27272E;
     --color-text-dark: #292930;
     --color-accent1: #FFDC60;
@@ -5058,7 +5060,7 @@ Pagination
 }
 
 .services-grid.service-style-2:hover, .services-grid.service-style-2.active {
-    background-color: var(--color-light);
+    background-color: var(--color-brand);
 }
 
 .services-grid.service-style-2:hover .content .more-btn, .services-grid.service-style-2.active .content .more-btn {
@@ -7358,7 +7360,7 @@ body.op-modal-open {
 }
 
 .mainmenu > li > a {
-    color: var(--color-body);
+    color: var(--color-yellow);
     font-weight: 500;
     font-size: var(--font-body-2);
     font-family: var(--font-primary);
@@ -8558,9 +8560,9 @@ body.op-modal-open {
     display: none;
 }
 
-.single-blog .single-blog-content .post-thumbnail {
+/*.single-blog .single-blog-content .post-thumbnail {
     margin: 0 0 35px;
-}
+}*/
 
 .single-blog .single-blog-content .post-thumbnail img {
     border-radius: 30px;
@@ -9933,15 +9935,15 @@ body.op-modal-open {
 }
 
 .active-dark-mode .services-grid.service-style-2 {
-    background: var(--dark-bg-color);
+    background: var(--color-brand);
 }
 
 .active-dark-mode .services-grid.service-style-2 .content .title a {
-    color: var(--dark-title-light);
+    color: var(--color-dark);
 }
 
 .active-dark-mode .services-grid.service-style-2 .content p {
-    color: var(--dark-body-text);
+    color: var(--color-dark);
 }
 
 .active-dark-mode .services-grid.service-style-2 .content .more-btn {
@@ -10614,4 +10616,16 @@ html {
     font-size: 16px; }
 html.smooth-scroll {
     scroll-behavior: smooth;
-    font-family: "SF Pro Display", "Segoe UI", "Noto Sans", "Roboto", "Helvetica", "Opensans", -apple-system, system-ui, BlinkMacSystemFont, sans-serif; }
+    font-family: "SF Pro Display", "Segoe UI", "Noto Sans", "Roboto", "Helvetica", "Opensans", -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+}
+
+.modal-content-custom {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}

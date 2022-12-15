@@ -7,7 +7,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
                         id="close-modal"></button>
             </div>
-            <form action="{{ route('jobs.store' ) }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('careers.store' ) }}" method="post" enctype="multipart/form-data">
                 <div class="modal-body">
                     @csrf
 
@@ -21,9 +21,17 @@
                     </div>
                     <div class="mb-3">
 
+                        <label for="title" class="form-label">Short Details </label>
+                        <input type="text" id="short_details"
+                               class="form-control"
+                               placeholder="Short Details" value="{{old('short_details')}}" required
+                               name="short_details"/>
+                    </div>
+                    <div class="mb-3">
+
                         <label for="" class="form-label">
                             Details </label>
-                        <textarea type="text" id="details" cols="10" rows="10"
+                        <textarea type="text" id="details" cols="15" rows="15"
                                   class="form-control summernote"
                                   placeholder="Enter Details here.."
                                   name="details">{{old('details')}}</textarea>
@@ -35,26 +43,11 @@
                                name="image"/>
 
                     </div>
+
                     <div class="mb-3">
-                        <label for="logo" class="form-label">Category</label>
-                        <select class="form-control" data-trigger
-                                name="category_id" id="status-field">
-
-                            <option value="">All</option>
-                            @foreach(getBlogCategories() as $res)
-                            <option value="{{$res->id}}">{{$res->category_title}}</option>
-                            @endforeach
-                        </select>
-
-                    </div>
-                    <div class="mb-3">
-                        <label for="logo" class="form-label">Type</label>
-                        <select class="form-control" data-trigger
-                                name="type" id="status-field">
-
-                            <option value="news">News</option>
-                            <option value="notice">Notice</option>
-                        </select>
+                        <label for="logo" class="form-label">Last Apply Date</label>
+                        <input class="form-control" data-trigger type="date"
+                                name="last_apply_date" >
 
                     </div>
 
@@ -62,7 +55,7 @@
                         <label for="status-field"
                                class="form-label">Status</label>
                         <select class="form-control" data-trigger
-                                name="is_active" id="status-field">
+                                name="is_published" id="status-field">
 
                             <option value="1">Active</option>
                             <option value="0">Inactive</option>

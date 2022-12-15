@@ -20,8 +20,8 @@ class CreateJobAppliesTable extends Migration
             $table->string("cv")->nullable();
             $table->integer("status")->default(0);//0=Pending, 1=Accepted, 2=Shortlisted, 3=Finalize
             $table->timestamps();
-            $table->foreign('job_id')->references('id')->on('job_posts')->onDelete('cascade');
-            $table->foreign('applicant_id')->references('id')->on('applicants')->onDelete('cascade');
+            $table->foreign('job_id')->references('id')->on('job_posts');
+            $table->foreign('applicant_id')->references('id')->on('applicants');
         });
     }
 
