@@ -17,12 +17,12 @@
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                <h4 class="mb-sm-0">News</h4>
+                <h4 class="mb-sm-0">Applicants</h4>
 
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a href="/admin/dashboard">Dashboards</a></li>
-                        <li class="breadcrumb-item active">News</li>
+                        <li class="breadcrumb-item active">Applicants</li>
                     </ol>
                 </div>
 
@@ -43,7 +43,7 @@
                                 id="create-btn" data-bs-target="#addCountry"><i
                                 class="ri-add-line align-bottom me-1"></i> Add
                         </button>
-                        @include('admin.news.create')
+                        @include('admin.careers.create')
                     </h4>
                 </div><!-- end card header -->
 
@@ -56,23 +56,21 @@
                                 <thead class="table-light">
                                 <tr>
 
+                                    <th class="sort" data-sort="Country">#</th>
                                     <th class="sort" data-sort="Country">Title</th>
-                                    <th class="sort" data-sort="Image">Featured Image</th>
                                     <th class="sort" data-sort="Details">Details</th>
-                                    <th class="sort" data-sort="Details">Type</th>
+                                    <th class="sort" data-sort="status">Last Apply Date</th>
                                     <th class="sort" data-sort="status">Status</th>
                                     <th class="sort" data-sort="action">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody class="list form-check-all">
-
-                                @foreach($result['data'] as $item)
+                                @php($i=1)
+                                @foreach($results as $item)
                                     <tr>
 
-
+                                        <td class="institute">{{$i++}}</td>
                                         <td class="institute">{{$item->title}}</td>
-                                        <td class="logo"><img src="{{$item->featured_image}}" width="100px">
-                                        </td>
                                         <td class="logo">
                                             <div class="edit">
                                                 <button class="btn btn-sm btn-info edit-item-btn"
@@ -103,20 +101,14 @@
                                             </div>
                                             <!--end modal -->
 
-
-                                        </td>
-                                        <td>
-                                            @if($item->type == "news") <span> News</span>
-                                            @else
-                                                <span> Notice</span>
-
-                                            @endif
                                         </td>
 
-
+                                        <td class="institute">
+                                            {{date('d-m-Y', strtotime($item->last_apply_date))}}
+                                        </td>
                                         <td class="status">
                                                     <span
-                                                        class="badge {{ ($item->is_active == 1) ? 'badge-soft-success' : 'badge-soft-danger'}} text-uppercase">{{ ($item->is_active == 1) ? 'Active' : 'Inactive'}}</span>
+                                                        class="badge {{ ($item->is_published == 1) ? 'badge-soft-success': 'badge-soft-danger' }} text-uppercase">{{ ($item->is_published == 1) ? 'Active' : 'Inactive'}}</span>
                                         </td>
 
                                         <td>
@@ -138,14 +130,6 @@
                                             </div>
                                         </td>
                                     </tr>
-
-
-                                    @include('admin.news.edit')
-                                    @include('admin.news.delete')
-
-
-
-
                                 @endforeach
                                 </tbody>
                             </table>

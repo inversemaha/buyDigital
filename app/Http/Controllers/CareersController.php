@@ -23,7 +23,7 @@ class NewsController extends Controller
         $data['data'] = News::orderBy('created_at', "DESC")->get();
 
 
-        return view("admin.news.show")->with("result", $data);
+        return view("admin.jobs.show")->with("result", $data);
     }
 
     /**
@@ -83,7 +83,7 @@ class NewsController extends Controller
     public function show(News $news)
     {
         $news= News::all();
-        return  view('admin.news.show')->with('news',$news );
+        return  view('admin.jobs.show')->with('jobs',$news );
     }
 
     /**
