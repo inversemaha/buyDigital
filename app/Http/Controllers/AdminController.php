@@ -6,6 +6,8 @@ namespace App\Http\Controllers;
 use App\Models\AdminRole;
 use App\Models\Department;
 use App\Models\InOutMonitor;
+use App\Models\JobApply;
+use App\Models\JobPost;
 use App\Models\Leave;
 use App\Models\LoginHistory;
 use App\Models\OutSideVisit;
@@ -22,8 +24,12 @@ class AdminController extends Controller
 {
     public function index()
     {
+        $countJobs= JobPost::count();
+        $countApplicant = JobApply::count();
 
-        return view('admin.dashboard.index');
+        return view('admin.dashboard.index')
+            ->with('countJobs',$countJobs)
+            ->with('countApplicant',$countApplicant);
 
     }
 

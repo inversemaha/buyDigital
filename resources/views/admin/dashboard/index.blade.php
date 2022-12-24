@@ -17,15 +17,15 @@
                                     <div class="flex-grow-1 overflow-hidden">
                                         <p
                                             class="text-uppercase fw-medium text-muted text-truncate mb-0">
-                                            Total Number of Employee</p>
+                                            Total Number of Applicant</p>
                                     </div>
 
 
                                 </div>
                                 <div class="d-flex align-items-end justify-content-between mt-4">
                                     <div>
-                                        <h4 class="fs-22 fw-semibold ff-secondary mb-4"></h4>
-                                        <a href="/employee/show" class="text-decoration-underline">View all Employee</a>
+                                        <h4 class="fs-22 fw-semibold ff-secondary mb-4">{{$countApplicant}}</h4>
+                                        <a href="/admin/job/appliers" class="text-decoration-underline">View all Applicant</a>
                                     </div>
                                     <div class="avatar-sm flex-shrink-0">
                                                         <span class="avatar-title bg-success rounded fs-3">
@@ -45,14 +45,14 @@
                                     <div class="flex-grow-1 overflow-hidden">
                                         <p
                                             class="text-uppercase fw-medium text-muted text-truncate mb-0">
-                                            Number of Project</p>
+                                            Number of Job</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-end justify-content-between mt-4">
                                     <div>
-                                        <h4 class="fs-22 fw-semibold ff-secondary mb-4"></h4>
-                                        <a href="/department/show" class="text-decoration-underline">View all
-                                            Projects</a>
+                                        <h4 class="fs-22 fw-semibold ff-secondary mb-4">{{$countJobs}}</h4>
+                                        <a href="/admin/careers" class="text-decoration-underline">View all
+                                            Job</a>
                                     </div>
                                     <div class="avatar-sm flex-shrink-0">
                                                         <span class="avatar-title bg-info rounded fs-3">
@@ -64,7 +64,7 @@
                         </div><!-- end card -->
                     </div><!-- end col -->
 
-                    <div class="col-xl-3 col-md-6">
+                    {{--<div class="col-xl-3 col-md-6">
                         <!-- card -->
                         <div class="card card-animate">
                             <div class="card-body">
@@ -88,8 +88,10 @@
                                     </div>
                                 </div>
                             </div><!-- end card body -->
-                        </div><!-- end card -->
-                    </div><!-- end col -->
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col -->
 
                     <div class="col-xl-3 col-md-6">
                         <!-- card -->
@@ -119,10 +121,12 @@
                                 </div>
                             </div><!-- end card body -->
                         </div><!-- end card -->
-                    </div><!-- end col -->
-                </div> <!-- end row-->
+                    </div>--}}
+                    <!-- end col -->
+                </div>
+                <!-- end row-->
 
-                <div class="row">
+                {{--<div class="row">
                     <div class="col-xl-12">
                         <div class="card">
 
@@ -158,7 +162,7 @@
                         </div><!-- end card -->
                     </div><!-- end col -->
 
-                {{--<div class="col-xl-4">
+                --}}{{--<div class="col-xl-4">
                     <!-- card -->
                     <div class="card card-height-100">
                         <div class="card-header align-items-center d-flex">
@@ -177,9 +181,9 @@
                         <!-- end card body -->
                     </div>
                     <!-- end card -->
-                </div>--}}
+                </div>--}}{{--
                 <!-- end col -->
-                </div>
+                </div>--}}
 
 
             </div> <!-- end .h-100-->

@@ -47,6 +47,7 @@ Route::group(['middleware' => 'applicant'], function () {
 
 
 Route::get('/login', [AdminController::class, 'login']);
+Route::get('/admin', [AdminController::class, 'login']);
 Route::get('/admin/login', [AdminController::class, 'login']);
 Route::get('/admin/forgot-password', [AdminController::class, 'forgotPassword']);
 Route::post('/admin/login-check', [AdminController::class, 'loginCheck']);
@@ -93,3 +94,13 @@ Route::group(['prefix' => 'web-api', 'middleware' => 'admin'], function () {
 /*Admin Section End*/
 
 
+
+Route::get('/migrate', function () {
+
+    Artisan::call('migrate:fresh');
+    Artisan::call('db:seed');
+    Artisan::call('config:clear');
+
+    return "Migrate!";
+
+});
