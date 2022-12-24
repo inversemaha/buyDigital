@@ -216,29 +216,23 @@
 
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase text-white mb-4">Animals</h5>
+                    <h5 class="text-uppercase text-white mb-4">QUICK LINKS</h5>
 
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>When your pet is missing</a>
+                            <a href="#about" class="text-white"></i>About Us</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Recently found</a>
+                            <a href="/#services" class="text-white"></i>Services</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>How to adopt?</a>
+                            <a href="/#testimonial" class="text-white"></i>Testimonial</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Pets for adoption</a>
+                            <a href="/sisters-concern" class="text-white"></i>Sister's Concern</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Material gifts</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Help with walks</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Volunteer activities</a>
+                            <a href="/career/board" class="text-white"></i>Career</a>
                         </li>
                     </ul>
                 </div>
@@ -246,7 +240,7 @@
 
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase text-white mb-4">Social Limks</h5>
+                    <h5 class="text-uppercase text-white mb-4">SOCIAL LINKS</h5>
 
                     <ul class="list-unstyled">
                         <li class="mb-2">
@@ -286,8 +280,8 @@
 
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-            © 2023 Copyright:
-            <a class="text-white" href="https://buydigitalbd.com/">Buy Digital</a>
+            © 2023 All Rights Reserved
+            <a class="text-white" href="https://buydigitalbd.com/">Buy Digital.</a>
         </div>
         <!-- Copyright -->
     </footer>
