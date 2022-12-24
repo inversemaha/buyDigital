@@ -23,6 +23,7 @@ class JobApplyController extends Controller
 
     public function applicantStatusUpdate($id,$status)
     {
+       // return "ok";
         try {
             JobApply::where('id', $id)->update([
                 'status'=> $status

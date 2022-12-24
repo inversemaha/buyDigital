@@ -49,11 +49,20 @@
     <link rel="stylesheet" href="/assets/css/vendor/magnific-popup.css">
     <link rel="stylesheet" href="/assets/css/vendor/green-audio-player.min.css">
     <link rel="stylesheet" href="/assets/css/vendor/odometer-theme-default.css">
+    <script src="/assets/js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="/assets/js/slick.js"></script>
+    <script src="/assets/js/anime.min.js"></script>
     <!-- Site Stylesheet -->
     <link rel="stylesheet" href="/assets/css/app.css">
     <style>
         .logo-size{
             height: 60px !important;
+        }
+         .mainmenu > li > a {
+            color: var(--color-white);
+        }
+        .axil-sticky .mainmenu > li > a {
+            color: var(--color-dark);
         }
     </style>
 
@@ -132,7 +141,7 @@
                                     <a href="/#team">Team</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="sisterConcern">
-                                    <a href="/sister-concern">Sister Concern</a>
+                                    <a href="/sisters-concern">Sister's Concern</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="career">
                                     <a href="/career/board">Career</a>
@@ -187,112 +196,100 @@
     <!--=====================================-->
     <!--=        Footer Area Start       	=-->
     <!--=====================================-->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-social-link">
+
+
+    <footer class="bg-color-dark text-center text-lg-start text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row my-4">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+                    <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+                        <img src="/assets/media/logo.png" height="70" alt=""
+                             loading="lazy" />
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-white mb-4">Animals</h5>
+
                     <ul class="list-unstyled">
-                        <li><a href="https://www.facebook.com/buydigitalbd/" data-sal="slide-up" data-sal-duration="500"
-                               data-sal-delay="100"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.instagram.com/buydigitalbd/" data-sal="slide-up" data-sal-duration="500"
-                               data-sal-delay="500"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/buy-digital-bd/" data-sal="slide-up" data-sal-duration="500"
-                               data-sal-delay="400"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="https://vimeo.com/" data-sal="slide-up" data-sal-duration="500"
-                               data-sal-delay="600"><i class="fab fa-vimeo-v"></i></a></li>
-                        <li><a href="https://dribbble.com/" data-sal="slide-up" data-sal-duration="500"
-                               data-sal-delay="700"><i class="fab fa-dribbble"></i></a></li>
-                        <li><a href="https://www.behance.net/" data-sal="slide-up" data-sal-duration="500"
-                               data-sal-delay="800"><i class="fab fa-behance"></i></a></li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>When your pet is missing</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Recently found</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>How to adopt?</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Pets for adoption</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Material gifts</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Help with walks</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Volunteer activities</a>
+                        </li>
                     </ul>
                 </div>
-            </div>
-            <div id="contact" class="footer-main">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-5" data-sal="slide-right" data-sal-duration="800" data-sal-delay="100">
-                        <div class="footer-widget border-end">
-                            <div class="footer-newsletter">
-                                <h2 class="title">Get in touch!</h2>
-                                <p>Fusce varius, dolor tempor interdum tristique, dui urna bib
-                                    endum magna, ut ullamcorper purus</p>
-                                <form>
-                                    <div class="input-group">
-                                        <input type="email" class="form-control" placeholder="Email address">
-                                        <button class="subscribe-btn" type="submit">Subscribe</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-7" data-sal="slide-left" data-sal-duration="800" data-sal-delay="100">
-                        <div class="row">
-                            {{--<div class="col-sm-4">
-                                <div class="footer-widget">
-                                    <h6 class="widget-title">Services I</h6>
-                                    <div class="footer-menu-link">
-                                        <ul class="list-unstyled">
-                                            <li><a href="/#services">Media Buying</a></li>
-                                            <li><a href="/#services">Creative Development</a></li>
-                                            <li><a href="/#services">Social Media Planing</a></li>
-                                            <li><a href="/#services">Video production</a></li>
-                                            <li><a href="/#services">Media Planning and Strategist</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="footer-widget">
-                                    <h6 class="widget-title">Services II</h6>
-                                    <div class="footer-menu-link">
-                                        <ul class="list-unstyled">
-                                            <li><a href="/#services">Influencer Marketing</a></li>
-                                            <li><a href="/#services">Website & App Development</a></li>
-                                            <li><a href="/#services">AD Network</a></li>
-                                            <li><a href="/#services">ATL/ BTL Support or Offline activation</a></li>
-                                            <li><a href="/#services">SEO</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>--}}
-                            <div class="col-sm-4">
-                                <div class="footer-widget">
-                                    <h6 class="widget-title">Contact</h6>
-                                    <div class="footer-menu-link">
-                                        <address class="address">
-                                            <p>147/C Green Road,<br> 4th Floor<i class="fas fa-building"></i></p>
-                                        </address>
-                                        <address class="address">
-                                            <span class="title">We're Available 24/7. Call Now.</span>
-                                            <a class="tel" href="tel:01717-808849"><i class="fas fa-phone"></i>(+880)
-                                                1717-808849</a>
-                                            <a class="tel" href="mailto:sales@buydigitalbd.com "><i class="fas fa-envelope"></i>sales@buydigitalbd.com</a>
-                                        </address>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-white mb-4">Social Limks</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="https://www.facebook.com/buydigitalbd/" class="text-white"><i class="fab fa-facebook-square  px-2"></i>Facebook</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://www.instagram.com/buydigitalbd/" class="text-white"><i class="fab fa-instagram px-2"></i>Instagram </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://www.linkedin.com/company/buy-digital-bd/" class="text-white"><i class="fab fa-linkedin px-2"></i>Linkedin</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="footer-bottom" data-sal="slide-up" data-sal-duration="500" data-sal-delay="100">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="footer-copyright">
-                            <span class="copyright-text">© 2022. All rights reserved by <a
-                                    href="https://buydigitalbd.com//">Buy Digital</a>.</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="footer-bottom-link">
-                            <ul class="list-unstyled">
-                                <li><a href="/privacy-policy">Privacy Policy</a></li>
-                                <li><a href="/terms-of-use">Terms of Use</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-white mb-4">Contact</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p><i class="fas fa-map-marker-alt pe-2"></i>147/C Green Road, 4th Floor<i class="fas fa-building pe-2"></i></p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-phone pe-2"></i>+880 1717-808849</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-envelope pe-2 mb-0"></i>sales@buydigitalbd.com</p>
+                        </li>
+                    </ul>
                 </div>
+                <!--Grid column-->
             </div>
+            <!--Grid row-->
         </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023 Copyright:
+            <a class="text-white" href="https://buydigitalbd.com/">Buy Digital</a>
+        </div>
+        <!-- Copyright -->
     </footer>
 
 

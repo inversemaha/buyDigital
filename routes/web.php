@@ -29,7 +29,7 @@ Route::get('/', [Controller::class, 'home']);
 Route::get('/career/board', [Controller::class, 'careerBoard']);
 Route::get('/career/board/details/{id}', [Controller::class, 'careerDetails']);
 Route::post('/career/application/apply', [ApplicantController::class, 'applyJob']);
-Route::get('/sister-concern', [Controller::class, 'sisterConcern']);
+Route::get('/sisters-concern', [Controller::class, 'sisterConcern']);
 Route::get('/privacy-policy', [Controller::class, 'privacyPolicy']);
 Route::get('/terms-of-use', [Controller::class, 'termsOfUse']);
 Route::get('/find-out-more', [Controller::class, 'findOutMore']);

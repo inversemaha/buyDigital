@@ -36,7 +36,7 @@
             <div class="row">
                 <div class="col-lg-6" data-sal="slide-right" data-sal-duration="1000">
                     <div class="case-study-featured-thumb thumb-1">
-                        <img class="paralax-image" src="assets/media/others/case-study-1.png" alt="Sister Concern">
+                        <img class="paralax-image" src="assets/media/sConcern/Influencer-Hub-Logo.jpg" alt="Sister Concern">
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6 offset-xl-1" data-sal="slide-left" data-sal-duration="1000"
@@ -52,29 +52,13 @@
                             <a href="https://www.facebook.com/Influencerhub.bd" target="_blank"
                                class="axil-btn btn-fill-primary btn-large">Visit Us</a>
                         </div>
-                        {{--<div class="case-study-counterup">
-                            <div class="single-counterup">
-                                <h3 class="count-number">
-                                    <span class="number count" data-count="15">15</span>
-                                    <span class="symbol">%</span>
-                                </h3>
-                                <span class="counter-title">ROI increase</span>
-                            </div>
-                            <div class="single-counterup">
-                                <h3 class="count-number">
-                                    <span class="number count" data-count="60">60</span>
-                                    <span class="symbol">k</span>
-                                </h3>
-                                <span class="counter-title">Monthly website visits</span>
-                            </div>
-                        </div>--}}
                     </div>
                 </div>
 
                 <div class="col-lg-6 offset-xl-1 order-lg-2" data-sal="slide-left" data-sal-duration="1000"
                      data-sal-delay="200">
                     <div class="case-study-featured-thumb thumb-2">
-                        <img class="paralax-image" src="assets/media/others/case-study-2.png" alt="Sister Concern">
+                        <img class="paralax-image" src="assets/media/sConcern/Adbliv-Logo.jpg" alt="Sister Concern">
                     </div>
                 </div>
                 <div class="col-lg-5 order-lg-1" data-sal="slide-right" data-sal-duration="1000">

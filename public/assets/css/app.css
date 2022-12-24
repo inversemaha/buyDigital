@@ -120,6 +120,7 @@ STYLESHEET INDEXING
 /*-------------------------
     Reset Styels
 -------------------------*/
+
 a {
     display: inline-block;
     text-decoration: none;
@@ -5284,11 +5285,48 @@ Pagination
 /*-------------------------
    Testimonial
 -------------------------*/
-.testimonial-grid {
+.testimonial-grid-quote {
     padding: 50px 0 30px;
     border-top: 2px solid transparent;
     -webkit-transition: var(--transition);
     transition: var(--transition);
+}
+
+@media only screen and (max-width: 767px) {
+    .testimonial-grid-quote {
+        padding: 30px 0;
+    }
+}
+
+.testimonial-grid-quote .social-media {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-rose);
+    font-family: var(--font-primary);
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.testimonial-grid-quote p {
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--color-text-dark);
+    font-family: var(--font-primary);
+    letter-spacing: -0.025em;
+}
+
+@media only screen and (max-width: 767px) {
+    .testimonial-grid-quote p {
+        font-size: 18px;
+    }
+}
+
+.testimonial-grid {
+    padding: 50px 0 30px;
+    border-top: 2px solid transparent;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);font-family: var(--font-secondary);
+    font-size: var(--font-body-2);
 }
 
 @media only screen and (max-width: 767px) {
@@ -7360,7 +7398,7 @@ body.op-modal-open {
 }
 
 .mainmenu > li > a {
-    color: var(--color-yellow);
+    color: var(--color-dark);
     font-weight: 500;
     font-size: var(--font-body-2);
     font-family: var(--font-primary);
@@ -10628,4 +10666,134 @@ html.smooth-scroll {
     background-clip: padding-box;
     border-radius: 0.3rem;
     outline: 0;
+}
+
+
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* Animation CSS */
+
+.ml2 {
+    font-weight: 900;
+    font-size: 3.5em;
+}
+
+.ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
 }

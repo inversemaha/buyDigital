@@ -112,7 +112,7 @@
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
                                                     @foreach(getOrderStatus() as $key=>$value)
-                                                        <a class="dropdown-item" href="/applicant-status-update/{{$item->id}}/{{$key}}">{{$value}}</a>
+                                                        <a class="dropdown-item" href="/admin/applicant-status-update/{{$item->id}}/{{$key}}">{{$value}}</a>
                                                     @endforeach
                                                 </div>
 
