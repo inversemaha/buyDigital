@@ -132,7 +132,7 @@
                                     <a href="/#about">About</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="service">
-                                    <a href="/#services">Services</a>
+                                    <a href="/services">Services</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="testimonial">
                                     <a href="/#testimonial">Testimonial</a>
@@ -141,7 +141,7 @@
                                     <a href="/#team">Team</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="sisterConcern">
-                                    <a href="/sisters-concern">Sister's Concern</a>
+                                    <a href="/sisters-concern">Sister Concerns</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="career">
                                     <a href="/career/board">Career</a>
@@ -229,7 +229,7 @@
                             <a href="/#testimonial" class="text-white"></i>Testimonial</a>
                         </li>
                         <li class="mb-2">
-                            <a href="/sisters-concern" class="text-white"></i>Sister's Concern</a>
+                            <a href="/sisters-concern" class="text-white"></i>Sister Concerns</a>
                         </li>
                         <li class="mb-2">
                             <a href="/career/board" class="text-white"></i>Career</a>

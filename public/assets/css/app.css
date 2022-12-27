@@ -92,7 +92,7 @@ STYLESHEET INDEXING
     --color-mercury: #E5E5E5;
     --gradient-primary: linear-gradient(90deg, #ECF2F6 0%, rgba(236, 242, 246, 0) 70.31%);
     --gradient-blue: linear-gradient(145.92deg, #5956E9 20.18%, #9991FF 76.9%);
-    --gradient-accent: linear-gradient(180deg, #FAB8C4 0%, #FFEDF0 100%);
+    --gradient-accent: linear-gradient(180deg, #bd7c88 0%, #ecd0d6 100%);
     --gradient-white: linear-gradient(266.3deg, rgba(236, 242, 246, 0) 7.84%, #ECF2F6 29.1%, rgba(236, 242, 246, 0) 64.32%);
     --gradient-dark: linear-gradient(180deg, #27272E 0%, #303035 100%);
     --border-light: 1px solid #E3E6E9;
@@ -616,7 +616,7 @@ input {
   Helper Classes
 -------------------------*/
 .bg-color-dark {
-    background-color: var(--color-dark);
+    background-color: #1B1919;
 }
 
 .bg-color-light {
@@ -3384,6 +3384,13 @@ Pagination
     background-position: center;
     padding: 310px 0 0;
 }
+.banner.banner-style-6 {
+    background-image: url("../media/banner/services.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 310px 0 0;
+}
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
     .banner.banner-style-5 {
@@ -4918,7 +4925,7 @@ Pagination
     content: "";
     height: 100%;
     width: 100%;
-    background: var(--gradient-blue);
+    background: var(--gradient-accent);
     border: 1px solid;
     border-image-source: linear-gradient(0deg, #27272E 64.45%, rgba(74, 75, 86, 0.72) 100%);
     border-radius: 30px;
@@ -10795,5 +10802,24 @@ html.smooth-scroll {
 
 .ml2 .letter {
     display: inline-block;
+    line-height: 1em;
+}
+.ml9 {
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+}
+
+.ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml9 .letter {
+    transform-origin: 50% 100%;
     line-height: 1em;
 }

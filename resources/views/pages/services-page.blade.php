@@ -1,57 +1,37 @@
 @extends('layouts.common')
-@section('title', 'Home Page')
+@section('title', 'Privacy Policy')
 @section('content')
-
     <!--=====================================-->
-    <!--=        Banner Area Start         =-->
+    <!--=       Breadcrumb Area Start       =-->
     <!--=====================================-->
-    <section class="banner banner-style-5">
+    <div class="breadcrum-area breadcrumb-banner">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-7">
-                    <div class="banner-content">
-                        <h1 class="title" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="200">
-
-                            Digital marketing company
-                        </h1>
-                        <div data-sal="slide-up" data-sal-duration="1000" data-sal-delay="100">
-                            <a href="#services" class="axil-btn btn-fill-white btn-large">Services</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-heading heading-left" data-sal="slide-right" data-sal-duration="1000" data-sal-delay="300">
+                <h1 class="title h2">Best solutions for your business</h1>
+                <p>Give your business a unique logo to stand out from crowd. We’ll create logo specifically for your company.</p>
+            </div>
+            <div class="banner-thumbnail" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="400">
+                <img class="paralax-image" src="assets/media/banner/banner-thumb-4.png" alt="Illustration">
             </div>
         </div>
-    </section>
-
-    <!--=====================================-->
-    <!--=  White Quote Section Area Start   =-->
-    <!--=====================================-->
-    @include('pages.snippets.white-quote-one')
+        <ul class="shape-group-8 list-unstyled">
+            <li class="shape shape-1" data-sal="slide-right" data-sal-duration="500" data-sal-delay="100">
+                <img src="assets/media/others/bubble-9.png" alt="Bubble">
+            </li>
+            <li class="shape shape-2" data-sal="slide-left" data-sal-duration="500" data-sal-delay="200">
+                <img src="assets/media/others/bubble-21.png" alt="Bubble">
+            </li>
+            <li class="shape shape-3" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300">
+                <img src="assets/media/others/line-4.png" alt="Line">
+            </li>
+        </ul>
+    </div>
 
     <!--=====================================-->
     <!--=        Service Area Start         =-->
     <!--=====================================-->
     @include('pages.snippets.services')
 
-    <!--=====================================-->
-    <!--=      Clients Feedback Area Start  =-->
-    <!--=====================================-->
-    @include('pages.snippets.feedback')
-
-    <!--=====================================-->
-    <!--=      About Section Start          =-->
-    <!--=====================================-->
-    @include('pages.snippets.about')
-
-    <!--=====================================-->
-    <!--=      Team Details Area Start      =-->
-    <!--=====================================-->
-    @include('pages.snippets.team')
-
-    <!--=====================================-->
-    <!--=      Statistics Area Start      =-->
-    <!--=====================================-->
-    @include('pages.snippets.statistics')
 
     <!--=====================================-->
     <!--=    Partner Section Area Start     =-->
@@ -123,26 +103,4 @@
             });
         });
     </script>
-
-    <script>
-        // Wrap every letter in a span
-        var textWrapper = document.querySelector('.ml9 .letters');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-        anime.timeline({loop: true})
-            .add({
-                targets: '.ml9 .letter',
-                scale: [0, 1],
-                duration: 1500,
-                elasticity: 600,
-                delay: (el, i) => 45 * (i+1)
-            }).add({
-            targets: '.ml9',
-            opacity: 0,
-            duration: 1000,
-            easing: "easeOutExpo",
-            delay: 1000
-        });
-    </script>
 @endsection
-

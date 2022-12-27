@@ -32,6 +32,7 @@ Route::post('/career/application/apply', [ApplicantController::class, 'applyJob'
 Route::get('/sisters-concern', [Controller::class, 'sisterConcern']);
 Route::get('/privacy-policy', [Controller::class, 'privacyPolicy']);
 Route::get('/terms-of-use', [Controller::class, 'termsOfUse']);
+Route::get('/services', [Controller::class, 'servicesPage']);
 Route::get('/find-out-more', [Controller::class, 'findOutMore']);
 
 

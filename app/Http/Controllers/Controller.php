@@ -60,6 +60,10 @@ class Controller extends BaseController
     {
         return view('pages.terms-of-use');
     }
+    public function servicesPage()
+    {
+        return view('pages.services-page');
+    }
 
     public function findOutMore()
     {
