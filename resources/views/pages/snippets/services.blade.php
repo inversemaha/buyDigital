@@ -1,7 +1,7 @@
 <!--=====================================-->
 <!--=        Service Area Start         =-->
 <!--=====================================-->
-<section class="section section-padding-2 bg-color-dark">
+<section id="services" class="section section-padding-2 bg-color-dark">
     <div class="container">
         <div class="section-heading heading-light-left">
             <span class="subtitle">What We Can Do For You</span>
@@ -14,7 +14,7 @@
                         <img src="assets/media/icon/icon-29.png" alt="icon">
                     </div>
                     <div class="content">
-                        <h5 class="title"><a href="/find-out-more">Media Buying</a></h5>
+                        <h5 class="title"><a href="/find-out-more/media-buying">Media Buying</a></h5>
                         {{--<p>If you’re trying to find digital ad visibility or impactful relationships with media owners
                             that result in greater reach with less investment, then media buying is your wise option
                             media buying can increase conversions and high ROI to clients and stakeholders.
@@ -23,7 +23,7 @@
                             Sales@buydigitalbd.com
 
                         </p>--}}
-                        <a href="/find-out-more" class="more-btn">Find out more</a>
+                        <a href="/find-out-more/media-buying" class="more-btn">Find out more</a>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                         <img src="assets/media/icon/icon-36.png" alt="icon">
                     </div>
                     <div class="content">
-                        <h5 class="title"><a href="/find-out-more">Creative Development</a></h5>
+                        <h5 class="title"><a href="/find-out-more/creative-development">Creative Development</a></h5>
                         {{--<p>Nowadays we cannot assume without creativity. Creativity permits us to view and clear up
                             issues more overtly and with innovation. Branding without creativity isn’t branding in any
                             respect and when you`re thinking about creativity then you could depart this to us as we dig
@@ -41,7 +41,7 @@
                             dedicated to you and to growing your business.
                             <br>Stay connected with buy digital for more information.
                         </p>--}}
-                        <a href="/find-out-more" class="more-btn">Find out more</a>
+                        <a href="/find-out-more/creative-development" class="more-btn">Find out more</a>
                     </div>
                 </div>
             </div>
@@ -51,13 +51,13 @@
                         <img src="assets/media/icon/icon-41.png" alt="icon">
                     </div>
                     <div class="content">
-                        <h5 class="title"><a href="/find-out-more">Social Media Planning</a></h5>
+                        <h5 class="title"><a href="/find-out-more/social-media-planning">Social Media Planning</a></h5>
                        {{-- <p>Social media lets you prepare and determine your goal audience including refining your
                             content material or content development and cadence, analyzing follower engagement, and
                             constructing deeper relationships collectively alongside your audience to overall marketing
                             strategy. If you’re prepared to explore your media planning, you could get an exceptional
                             deal with Buy Digital.</p>--}}
-                        <a href="/find-out-more" class="more-btn">Find out more</a>
+                        <a href="/find-out-more/social-media-planning" class="more-btn">Find out more</a>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                         <img src="assets/media/icon/icon-34.png" alt="icon">
                     </div>
                     <div class="content">
-                        <h5 class="title"><a href="/find-out-more">Strategy and Innovation</a></h5>
+                        <h5 class="title"><a href="/find-out-more/strategy-and-innovation">Strategy and Innovation</a></h5>
                         {{--<p>Marketing strategy alludes to the overall strategy of a business to reach potential clients
                             and convert them into clients of its products and services. A marketing strategy contains
                             the company’s esteem recommendation, key brand information, data on target customer
@@ -76,7 +76,7 @@
                             your business.
                             <br>Our team is ready to explore your thoughts, if you’re willing to delve into it.
                         </p>--}}
-                        <a href="/find-out-more" class="more-btn">Find out more</a>
+                        <a href="/find-out-more/strategy-and-innovation" class="more-btn">Find out more</a>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                         <img src="assets/media/icon/icon-40.png" alt="icon">
                     </div>
                     <div class="content">
-                        <h5 class="title"><a href="/find-out-morel">Web and App development</a></h5>
+                        <h5 class="title"><a href="/find-out-more/web-and-app-development">Web and App development</a></h5>
                         {{--<p>A good website design is important because it makes a difference in centering the user’s eyes
                             and coordinating them where they ought to be looking. Your design can draw into
                             consideration extraordinary offers on your site, highlight calls to action and make it
@@ -97,7 +97,7 @@
                             <br>For more info,
                             <br>Please contact: sales@buydigital.bd
                         </p>--}}
-                        <a href="/find-out-more" class="more-btn">Find out more</a>
+                        <a href="/find-out-more/web-and-app-development" class="more-btn">Find out more</a>
                     </div>
                 </div>
             </div>
@@ -107,14 +107,14 @@
                         <img src="assets/media/icon/icon-42.png" alt="icon">
                     </div>
                     <div class="content">
-                        <h5 class="title"><a href="/find-out-more">SEO and SEM</a></h5>
+                        <h5 class="title"><a href="/find-out-more/SEO-and-SEM">SEO and SEM</a></h5>
                         {{--<p>SEO referred to as Search Engine Optimization is the procedure of acquiring traffic to your
                             website in a natural way. On the other hand, SEM which is referred to as Search Engine
                             Optimization is for targeted ads that you pay for. Both of those have a not unusual place
                             goal to accumulate extra visitors so one can in the end raise sales generation. A steady
                             search engine marketing attempt will bring about a devoted and lasting purchaser base whilst
                             the utility of SEM affords a right-way upward push in sale conversions with paid ads. </p>--}}
-                        <a href="/find-out-more" class="more-btn">Find out more</a>
+                        <a href="/find-out-more/SEO-and-SEM" class="more-btn">Find out more</a>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@
                         <img src="assets/media/icon/icon-38.png" alt="icon">
                     </div>
                     <div class="content">
-                        <h5 class="title"><a href="/find-out-more">Influencer Marketing</a></h5>
+                        <h5 class="title"><a href="/find-out-more/influence-marketinge">Influencer Marketing</a></h5>
                         {{--<p>Are you looking for influencer marketing to promote your brand with reputable influencers and
                             generate hype from social media to mass media? Then you are on the right track! Influencer
                             Hub is one of the leads in influencer marketing in Bangladesh.
@@ -135,7 +135,7 @@
                             <br>For learn more,
                             <br>Please visit, https://www.facebook.com/Influencerhub.bd
                         </p>--}}
-                        <a href="/find-out-more" class="more-btn">Find out more</a>
+                        <a href="/find-out-more/influence-marketing" class="more-btn">Find out more</a>
                     </div>
                 </div>
             </div>
@@ -145,7 +145,7 @@
                         <img src="assets/media/icon/icon-37.png" alt="icon">
                     </div>
                     <div class="content">
-                        <h5 class="title"><a href="/find-out-more">AD Network</a></h5>
+                        <h5 class="title"><a href="/find-out-more/AD-network">AD Network</a></h5>
                         {{--<p>Adbliv is an ad network agency that has started operations in Bangladesh to develop an
                             ecosystem of full-stack SSP programmatic solutions. Adbliv commits to working with
                             transparency and true ad visibility for advertisers and publishers in Bangladesh. Our motto
@@ -155,7 +155,7 @@
                             <br>Please visit, https://www.adbliv.com
 
                         </p>--}}
-                        <a href="/find-out-more" class="more-btn">Find out more</a>
+                        <a href="/find-out-more/AD-network" class="more-btn">Find out more</a>
                     </div>
                 </div>
             </div>
@@ -165,14 +165,14 @@
                         <img src="assets/media/icon/icon-31.png" alt="icon">
                     </div>
                     <div class="content">
-                        <h5 class="title"><a href="/find-out-more">ATL/ BTL Support or Offline activation</a></h5>
+                        <h5 class="title"><a href="/find-out-more/offline-activation">ATL/ BTL Support or Offline activation</a></h5>
                         {{--<p>If you are searching for ATL, BTL or Offline Activation besides digital marketing for your
                             brand you may make the choice with us.
                             <br>For more information,
                             <br>Please contact, sales@buydigitalbd.com
 
                         </p>--}}
-                        <a href="/find-out-more" class="more-btn">Find out more</a>
+                        <a href="/find-out-more/offline-activation" class="more-btn">Find out more</a>
                     </div>
                 </div>
             </div>

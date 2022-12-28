@@ -29,16 +29,6 @@
     @include('pages.snippets.white-quote-one')
 
     <!--=====================================-->
-    <!--=        Service Area Start         =-->
-    <!--=====================================-->
-    @include('pages.snippets.services')
-
-    <!--=====================================-->
-    <!--=      Clients Feedback Area Start  =-->
-    <!--=====================================-->
-    @include('pages.snippets.feedback')
-
-    <!--=====================================-->
     <!--=      About Section Start          =-->
     <!--=====================================-->
     @include('pages.snippets.about')
@@ -47,6 +37,16 @@
     <!--=      Team Details Area Start      =-->
     <!--=====================================-->
     @include('pages.snippets.team')
+
+    <!--=====================================-->
+    <!--=        Service Area Start         =-->
+    <!--=====================================-->
+    @include('pages.snippets.services')
+
+    <!--=====================================-->
+    <!--=      Clients Feedback Area Start  =-->
+    <!--=====================================-->
+    @include('pages.snippets.feedback')
 
     <!--=====================================-->
     <!--=      Statistics Area Start      =-->
@@ -133,13 +133,13 @@
             .add({
                 targets: '.ml9 .letter',
                 scale: [0, 1],
-                duration: 1500,
+                duration: 900,
                 elasticity: 600,
                 delay: (el, i) => 45 * (i+1)
             }).add({
             targets: '.ml9',
             opacity: 0,
-            duration: 1000,
+            duration: 900,
             easing: "easeOutExpo",
             delay: 1000
         });

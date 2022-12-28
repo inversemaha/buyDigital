@@ -6,7 +6,7 @@
     <div class="container">
         <div class="section-heading">
             <span class="subtitle">Meet Our</span>
-            <h3 class="title">Digital Business Team</h3>
+            <h3 class="title">Meet our valuable Board members</h3>
         </div>
         {{--<div class="row align-items-center">
             <div class="col-lg-6">

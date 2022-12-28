@@ -15,7 +15,7 @@
                             <br>results via effective and measurable solutions.</span>
                       </span>
                     </h1>
-                    <a href="#about" class="axil-btn btn-fill-primary btn-large">Get Started</a>
+                    <a href="#services" class="axil-btn btn-fill-primary btn-large">Get Started</a>
                 </div>
             </div>
         </div>

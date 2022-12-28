@@ -33,7 +33,15 @@ Route::get('/sisters-concern', [Controller::class, 'sisterConcern']);
 Route::get('/privacy-policy', [Controller::class, 'privacyPolicy']);
 Route::get('/terms-of-use', [Controller::class, 'termsOfUse']);
 Route::get('/services', [Controller::class, 'servicesPage']);
-Route::get('/find-out-more', [Controller::class, 'findOutMore']);
+Route::get('/find-out-more/media-buying', [Controller::class, 'findOutMediaBuying']);
+Route::get('/find-out-more/creative-development', [Controller::class, 'findOutCreativeDevelopment']);
+Route::get('/find-out-more/social-media-planning', [Controller::class, 'findOutSocialMediaPlanning']);
+Route::get('/find-out-more/strategy-and-innovation', [Controller::class, 'findOutStrategyAndInnovation']);
+Route::get('/find-out-more/web-and-app-development', [Controller::class, 'findOutWebAndAppDevelopment']);
+Route::get('/find-out-more/SEO-and-SEM', [Controller::class, 'findOutSEOAndSEM']);
+Route::get('/find-out-more/influence-marketing', [Controller::class, 'findOutInfluenceMarketing']);
+Route::get('/find-out-more/AD-network', [Controller::class, 'findOutADNetwork']);
+Route::get('/find-out-more/offline-activation', [Controller::class, 'findOutOfflineActivation']);
 
 
 /*Applicant Area Start*/

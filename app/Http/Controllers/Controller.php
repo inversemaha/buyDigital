@@ -65,9 +65,41 @@ class Controller extends BaseController
         return view('pages.services-page');
     }
 
-    public function findOutMore()
+    public function findOutMediaBuying()
     {
-        return view('pages.find-out-more');
+        return view('pages.snippets.services.find-out-more-media-buying');
+    }
+    public function findOutCreativeDevelopment()
+    {
+        return view('pages.snippets.services.find-out-more-creative-development');
+    }
+    public function findOutSocialMediaPlanning()
+    {
+        return view('pages.snippets.services.find-out-more-social-media-planning');
+    }
+    public function findOutStrategyAndInnovation()
+    {
+        return view('pages.snippets.services.find-out-more-strategy-and-innovation');
+    }
+    public function findOutWebAndAppDevelopment()
+    {
+        return view('pages.snippets.services.find-out-more-web-and-app-development');
+    }
+    public function findOutSEOAndSEM()
+    {
+        return view('pages.snippets.services.find-out-more-SEO-and-SEM');
+    }
+    public function findOutInfluenceMarketing()
+    {
+        return view('pages.snippets.services.find-out-more-influence-marketing');
+    }
+    public function findOutADNetwork()
+    {
+        return view('pages.snippets.services.find-out-more-AD-network');
+    }
+    public function findOutOfflineActivation()
+    {
+        return view('pages.snippets.services.find-out-more-offline-activation');
     }
 
 }

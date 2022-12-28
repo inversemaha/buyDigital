@@ -58,8 +58,8 @@
         .logo-size{
             height: 60px !important;
         }
-         .mainmenu > li > a {
-            color: var(--color-white);
+        .mainmenu > li > a {
+            color: var(--color-dark);
         }
         .axil-sticky .mainmenu > li > a {
             color: var(--color-dark);
@@ -69,7 +69,7 @@
 </head>
 
 <body class="sticky-header">
-    @include('sweetalert::alert')
+@include('sweetalert::alert')
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience and security.</p>
@@ -299,7 +299,7 @@
                 <div class="col-lg-5 col-xl-6">
                     <ul class="main-navigation list-unstyled">
                         <li><a  onclick="closeNav()" href="/#about">About</a></li>
-                        <li><a id="serviceID" href="/services">Services</a></li>
+                        <li><a id="serviceID" href="/#services">Services</a></li>
                         <li><a id="testiID" href="/#testimonial">Testimonial</a></li>
                         <li><a id="teamID" href="/#team">Team</a></li>
                         <li><a href="/sister-concern">Sister Concern</a></li>
@@ -355,11 +355,11 @@
 
 <!-- Site Scripts -->
 <script src="/assets/js/app.js"></script>
-    <script>
-        $('#offcanvasMenuRight').click(function() {
-            $('#aboutID').modal('hide');
-        });
-    </script>
+<script>
+    $('#offcanvasMenuRight').click(function() {
+        $('#aboutID').modal('hide');
+    });
+</script>
 </body>
 
 </html>

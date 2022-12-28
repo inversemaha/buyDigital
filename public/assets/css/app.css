@@ -5021,7 +5021,7 @@ Pagination
 }
 
 .services-grid:hover .content .more-btn, .services-grid.active .content .more-btn {
-    color: var(--color-accent2);
+    color: var(--color-light);
 }
 
 .services-grid:hover .content .more-btn:before, .services-grid.active .content .more-btn:before {
@@ -10822,4 +10822,8 @@ html.smooth-scroll {
 .ml9 .letter {
     transform-origin: 50% 100%;
     line-height: 1em;
+}
+.feedback-title {
+    margin-top: 15px;
+    text-align: center;
 }

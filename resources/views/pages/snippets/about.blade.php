@@ -5,16 +5,14 @@
 <section id="about" class="section section-padding-equal case-study-featured-area bg-color-dark">
     <div class="container">
         <div class="row">
-            <div class="col-xl-7 col-lg-6 sal-animate" data-sal="slide-right" data-sal-duration="800">
-                <div class="case-study-featured">
+            <div class="part-wrapper">
+
+            </div>
+            <div class="col-xl-6 col-lg-6 sal-animate" data-sal="slide-right" data-sal-duration="800">
+                <div class=" pe-lg-5 ps-lg-5 case-study-featured">
                     <div class="section-heading heading-left heading-light">
-                        <span class="subtitle">About</span>
-                        <h2 class="title">Buy Digital</h2>
-                        <p>
-                            Buy Digital is a 360 degree digital marketing agency that focuses on driving results via
-                            effective, measurable 360 degree in digital solution
-                        </p>
-                        <br>
+                        {{--<span class="subtitle"></span>--}}
+                        <h2 class="title">About Buy Digital</h2>
                         <p>
                             We can partner with you to develop your marketing plans and execute winning strategies
                             to generate and convert results to build brands. From media buying, creative and website
