@@ -1,4 +1,4 @@
-@extends('layouts.common')
+@extends('layouts.service-layout')
 @section('title', 'Our Sister Concern')
 @section('content')
 
@@ -9,7 +9,7 @@
         <div class="container">
             <div class="section-heading heading-left" data-sal="slide-right" data-sal-duration="1000"
                  data-sal-delay="300">
-                <h1 class="title h2">Our Sister Concern</h1>
+                <h1 class="title h2">Our Sister Concerns</h1>
                 {{--<p>We design and develop web and mobile applications for our clients worldwide.</p>--}}
             </div>
             <div class="banner-thumbnail thumbnail-3" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="400">

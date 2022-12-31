@@ -1196,6 +1196,7 @@ Pagination
 .section-heading {
     text-align: center;
     margin-bottom: 60px;
+    margin-top: 65px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -3788,7 +3789,7 @@ Pagination
 
 .case-study-featured .section-heading p {
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .case-study-counterup {
@@ -4925,7 +4926,7 @@ Pagination
     content: "";
     height: 100%;
     width: 100%;
-    background: var(--gradient-accent);
+    background: var(--gradient-blue);
     border: 1px solid;
     border-image-source: linear-gradient(0deg, #27272E 64.45%, rgba(74, 75, 86, 0.72) 100%);
     border-radius: 30px;
@@ -4971,7 +4972,7 @@ Pagination
 }
 
 .services-grid .content .title a:hover {
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .services-grid .content p {
@@ -5021,7 +5022,7 @@ Pagination
 }
 
 .services-grid:hover .content .more-btn, .services-grid.active .content .more-btn {
-    color: var(--color-light);
+    color: var(--color-white);
 }
 
 .services-grid:hover .content .more-btn:before, .services-grid.active .content .more-btn:before {
@@ -10807,12 +10808,12 @@ html.smooth-scroll {
 .ml9 {
     position: relative;
     font-weight: 200;
-    font-size: 4em;
+    font-size: 2.5em;
 }
 
 .ml9 .text-wrapper {
     position: relative;
-    display: inline-block;
+    display: block;
     padding-top: 0.2em;
     padding-right: 0.05em;
     padding-bottom: 0.1em;
@@ -10821,7 +10822,7 @@ html.smooth-scroll {
 
 .ml9 .letter {
     transform-origin: 50% 100%;
-    line-height: 1em;
+    line-height: 1.5em;
 }
 .feedback-title {
     margin-top: 15px;

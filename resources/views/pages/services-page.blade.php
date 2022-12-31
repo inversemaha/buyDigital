@@ -7,8 +7,8 @@
     <div class="breadcrum-area breadcrumb-banner">
         <div class="container">
             <div class="section-heading heading-left" data-sal="slide-right" data-sal-duration="1000" data-sal-delay="300">
-                <h1 class="title h2">Best solutions for your business</h1>
-                <p>Give your business a unique logo to stand out from crowd. We’ll create logo specifically for your company.</p>
+                <h1 class="title h2">You may have a look to our services which can be the best solutions for your business needs.</h1>
+                {{--<p>Give your business a unique logo to stand out from crowd. We’ll create logo specifically for your company.</p>--}}
             </div>
             <div class="banner-thumbnail" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="400">
                 <img class="paralax-image" src="assets/media/banner/banner-thumb-4.png" alt="Illustration">

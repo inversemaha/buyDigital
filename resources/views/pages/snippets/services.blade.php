@@ -4,7 +4,6 @@
 <section id="services" class="section section-padding-2 bg-color-dark">
     <div class="container">
         <div class="section-heading heading-light-left">
-            <span class="subtitle">What We Can Do For You</span>
             <h2 class="title">Services we can help you with</h2>
         </div>
         <div class="row">
@@ -14,7 +13,7 @@
                         <img src="assets/media/icon/icon-29.png" alt="icon">
                     </div>
                     <div class="content">
-                        <h5 class="title"><a href="/find-out-more/media-buying">Media Buying</a></h5>
+                        <h5 class="title"><a href="/find-out-more/media-buying">Media Buying &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h5>
                         {{--<p>If you’re trying to find digital ad visibility or impactful relationships with media owners
                             that result in greater reach with less investment, then media buying is your wise option
                             media buying can increase conversions and high ROI to clients and stakeholders.
@@ -107,7 +106,7 @@
                         <img src="assets/media/icon/icon-42.png" alt="icon">
                     </div>
                     <div class="content">
-                        <h5 class="title"><a href="/find-out-more/SEO-and-SEM">SEO and SEM</a></h5>
+                        <h5 class="title"><a href="/find-out-more/SEO-and-SEM">SEO and SEM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h5>
                         {{--<p>SEO referred to as Search Engine Optimization is the procedure of acquiring traffic to your
                             website in a natural way. On the other hand, SEM which is referred to as Search Engine
                             Optimization is for targeted ads that you pay for. Both of those have a not unusual place
@@ -145,7 +144,7 @@
                         <img src="assets/media/icon/icon-37.png" alt="icon">
                     </div>
                     <div class="content">
-                        <h5 class="title"><a href="/find-out-more/AD-network">AD Network</a></h5>
+                        <h5 class="title"><a href="/find-out-more/AD-network">AD Network &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h5>
                         {{--<p>Adbliv is an ad network agency that has started operations in Bangladesh to develop an
                             ecosystem of full-stack SSP programmatic solutions. Adbliv commits to working with
                             transparency and true ad visibility for advertisers and publishers in Bangladesh. Our motto

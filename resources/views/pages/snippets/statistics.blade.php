@@ -5,7 +5,6 @@
 <section id="testimonial" class="section section-padding bg-color-dark">
     <div class="container">
         <div class="section-heading heading-light">
-            <span class="subtitle">Statistics</span>
             <h2 class="title">We Are Trusted by <br>More than 300 Clients Worldwide</h2>
 
         </div>

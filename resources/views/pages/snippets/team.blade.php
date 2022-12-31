@@ -5,8 +5,7 @@
 <section class="section-padding-equal team-details-area" id="team">
     <div class="container">
         <div class="section-heading">
-            <span class="subtitle">Meet Our</span>
-            <h3 class="title">Meet our valuable Board members</h3>
+            <h3 class="title">Meet our Chair and Directors of the Board </h3>
         </div>
         {{--<div class="row align-items-center">
             <div class="col-lg-6">

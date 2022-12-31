@@ -198,7 +198,7 @@
     <!--=====================================-->
 
 
-    <footer class="bg-color-dark text-center text-lg-start text-white">
+    <footer id="contact" class="bg-color-dark text-center text-lg-start text-white">
         <!-- Grid container -->
         <div class="container p-4">
             <!--Grid row-->
@@ -206,7 +206,7 @@
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
 
-                    <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+                    <div class="bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 200px; height: 70px;">
                         <img src="/assets/media/logo.png" height="70" alt=""
                              loading="lazy" />
                     </div>
@@ -290,7 +290,7 @@
     <!--=====================================-->
     <!--=       Offcanvas Menu Area       	=-->
     <!--=====================================-->
-    <div class="offcanvas offcanvas-end header-offcanvasmenu" tabindex="-1" id="offcanvasMenuRight">
+    <div  class="offcanvas offcanvas-end header-offcanvasmenu" tabindex="-1" id="offcanvasMenuRight">
         <div class="offcanvas-header">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>

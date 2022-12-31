@@ -31,7 +31,7 @@
                  data-sal-duration="800">
 
                 <div class="case-study-featured-thumb">
-                    <img src="assets/media/images/home2.jpeg" alt="travel">
+                    <img src="assets/media/images/home2.jpeg" style="height: 60% !important;" alt="travel">
                 </div>
             </div>
         </div>
