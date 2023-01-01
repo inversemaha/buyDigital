@@ -9,7 +9,7 @@
             <br><h2 class="title">Feedback</h2>
             <p>Here are some user feedback about our services and how they help them achieve their goals.</p>
         </div>
-        <div class="slick-slider recent-post-slide" data-slick='{"infinite": true, "autoplay": true, "arrows": false, "dots": false, "slidesToShow": 2,
+        <div class="slick-slider recent-post-slide" data-slick='{"infinite": true, "autoplay": true, "arrows": true, "dots": true, "slidesToShow": 2,
         "responsive": [
             {
                 "breakpoint": 1199,
