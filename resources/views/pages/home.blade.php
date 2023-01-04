@@ -12,7 +12,7 @@
                     <div class="banner-content">
                         <h1 class="title" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="200">
 
-                            Digital marketing company
+                            Digital Marketing Company
                         </h1>
                         <div data-sal="slide-up" data-sal-duration="1000" data-sal-delay="100">
                             <a href="#services" class="axil-btn btn-fill-white btn-large">Services</a>

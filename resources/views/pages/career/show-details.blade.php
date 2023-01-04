@@ -1,4 +1,4 @@
-@extends('layouts.common')
+@extends('layouts.service-layout')
 @section('title', 'Career Details')
 @section('content')
 

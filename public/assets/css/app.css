@@ -92,7 +92,7 @@ STYLESHEET INDEXING
     --color-mercury: #E5E5E5;
     --gradient-primary: linear-gradient(90deg, #ECF2F6 0%, rgba(236, 242, 246, 0) 70.31%);
     --gradient-blue: linear-gradient(145.92deg, #5956E9 20.18%, #9991FF 76.9%);
-    --gradient-accent: linear-gradient(180deg, #bd7c88 0%, #ecd0d6 100%);
+    --gradient-accent: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
     --gradient-white: linear-gradient(266.3deg, rgba(236, 242, 246, 0) 7.84%, #ECF2F6 29.1%, rgba(236, 242, 246, 0) 64.32%);
     --gradient-dark: linear-gradient(180deg, #27272E 0%, #303035 100%);
     --border-light: 1px solid #E3E6E9;
@@ -618,6 +618,9 @@ input {
 .bg-color-dark {
     background-color: #1B1919;
 }
+.bg-color-dark-ext {
+    background-color: #2bc3ec;
+}
 
 .bg-color-light {
     background-color: var(--color-light);
@@ -842,6 +845,16 @@ input {
     text-align: right;
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1866px) {
+    .breadcrumb-banner .banner-thumbnail {
+        right: -50px;
+        bottom: -80px;
+    }
+
+    .breadcrumb-banner .banner-thumbnail img {
+        width: 90%;
+    }
+}
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
     .breadcrumb-banner .banner-thumbnail {
         right: -50px;
@@ -4926,7 +4939,7 @@ Pagination
     content: "";
     height: 100%;
     width: 100%;
-    background: var(--gradient-blue);
+    background: var(--gradient-accent);
     border: 1px solid;
     border-image-source: linear-gradient(0deg, #27272E 64.45%, rgba(74, 75, 86, 0.72) 100%);
     border-radius: 30px;
@@ -4967,12 +4980,15 @@ Pagination
     flex: 1;
 }
 
-.services-grid .content .title a {
+.services-grid .content .title a{
     color: var(--color-white);
 }
 
 .services-grid .content .title a:hover {
-    color: var(--color-white);
+    color: var(--color-dark);
+}
+.services-grid.active .content .title a {
+    color: var(--color-dark);
 }
 
 .services-grid .content p {
@@ -4983,9 +4999,9 @@ Pagination
     transition: var(--transition);
 }
 
-.services-grid .content .more-btn {
+.services-grid .content .more-btn:before {
     font-weight: 500;
-    color: var(--color-white);
+    color: var(--color-dark);
     position: relative;
     padding-left: 50px;
 }
@@ -5017,12 +5033,15 @@ Pagination
 }
 
 .services-grid:hover .content p, .services-grid.active .content p {
-    color: var(--color-light);
+    color: var(--color-dark);
     opacity: 1;
 }
 
+.services-grid .content .more-btn {
+    color: var(--color-white) !important;
+}
 .services-grid:hover .content .more-btn, .services-grid.active .content .more-btn {
-    color: var(--color-white);
+    color: var(--color-dark) !important;
 }
 
 .services-grid:hover .content .more-btn:before, .services-grid.active .content .more-btn:before {
@@ -10460,6 +10479,9 @@ body.op-modal-open {
     }
 }
 
+.section-padding-1 {
+    padding: 6px 0 100px;
+}
 .section-padding-2 {
     padding: 140px 0 100px;
 }
@@ -10828,3 +10850,8 @@ html.smooth-scroll {
     margin-top: 15px;
     text-align: center;
 }
+
+.heading-light .titleP {
+    color: #c3bebe;
+}
+

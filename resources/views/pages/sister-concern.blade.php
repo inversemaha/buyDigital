@@ -36,7 +36,7 @@
             <div class="row">
                 <div class="col-lg-6" data-sal="slide-right" data-sal-duration="1000">
                     <div class="case-study-featured-thumb thumb-1">
-                        <img class="paralax-image" src="assets/media/sConcern/Influencer-Hub-Logo.jpg" alt="Sister Concern">
+                        <img class="paralax-image rounded" src="assets/media/sConcern/Influencer-Hub-Logo.jpg" alt="Sister Concern">
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6 offset-xl-1" data-sal="slide-left" data-sal-duration="1000"
@@ -58,7 +58,7 @@
                 <div class="col-lg-6 offset-xl-1 order-lg-2" data-sal="slide-left" data-sal-duration="1000"
                      data-sal-delay="200">
                     <div class="case-study-featured-thumb thumb-2">
-                        <img class="paralax-image" src="assets/media/sConcern/Adbliv-Logo.jpg" alt="Sister Concern">
+                        <img class="paralax-image rounded" src="assets/media/sConcern/Adbliv-Logo.jpg" alt="Sister Concern">
                     </div>
                 </div>
                 <div class="col-lg-5 order-lg-1" data-sal="slide-right" data-sal-duration="1000">

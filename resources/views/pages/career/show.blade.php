@@ -1,4 +1,4 @@
-@extends('layouts.common')
+@extends('layouts.service-layout')
 @section('title', 'career')
 @section('content')
 
@@ -11,7 +11,7 @@
                 <h1 class="title h2">Career Board</h1>
             </div>
             <div class="banner-thumbnail" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="400">
-                <img class="paralax-image" src="/assets/media/banner/banner-thumb-4.png" alt="Illustration">
+                <img class="paralax-image" src="/assets/media/banner/banner-thumb-6.png" alt="Illustration">
             </div>
         </div>
         <ul class="shape-group-8 list-unstyled">

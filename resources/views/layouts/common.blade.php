@@ -134,11 +134,8 @@
                                 <li class="menu-item" data-section-anchor="service">
                                     <a href="/services">Services</a>
                                 </li>
-                                <li class="menu-item" data-section-anchor="testimonial">
-                                    <a href="/#testimonial">Testimonial</a>
-                                </li>
-                                <li class="menu-item" data-section-anchor="team">
-                                    <a href="/#team">Team</a>
+                                <li class="menu-item" data-section-anchor="Board Members">
+                                    <a href="/#team">Board Members</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="sisterConcern">
                                     <a href="/sisters-concern">Sister Concerns</a>
@@ -206,8 +203,8 @@
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
 
-                    <div class="bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 200px; height: 70px;">
-                        <img src="/assets/media/logo.png" height="70" alt=""
+                    <div class="bg-white rounded shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 200px; height: 70px;">
+                        <img class="rounded" src="/assets/media/logo.png" height="70" alt=""
                              loading="lazy" />
                     </div>
 
@@ -224,9 +221,6 @@
                         </li>
                         <li class="mb-2">
                             <a href="/#services" class="text-white"></i>Services</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="/#testimonial" class="text-white"></i>Testimonial</a>
                         </li>
                         <li class="mb-2">
                             <a href="/sisters-concern" class="text-white"></i>Sister Concerns</a>
@@ -300,8 +294,7 @@
                     <ul class="main-navigation list-unstyled">
                         <li><a  onclick="closeNav()" href="/#about">About</a></li>
                         <li><a id="serviceID" href="/services">Services</a></li>
-                        <li><a id="testiID" href="/#testimonial">Testimonial</a></li>
-                        <li><a id="teamID" href="/#team">Team</a></li>
+                        <li><a id="teamID" href="/#team">Board Members</a></li>
                         <li><a href="/sister-concern">Sister Concern</a></li>
                     </ul>
                 </div>

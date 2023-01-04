@@ -12,7 +12,7 @@
                 <div class=" pe-lg-5 ps-lg-5 case-study-featured">
                     <div class="section-heading heading-left heading-light">
                         {{--<span class="subtitle"></span>--}}
-                        <h2 class="title">About Buy Digital</h2>
+                        <h2 class="titleP">About Buy Digital</h2>
                         <p>
                             We can partner with you to develop your marketing plans and execute winning strategies
                             to generate and convert results to build brands. From media buying, creative and website
