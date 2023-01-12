@@ -64,6 +64,8 @@ STYLESHEET INDEXING
 
 :root {
     --color-primary: #5956E9;
+    --color-info: #2bc3ec;
+    --color-green: #91C84E;
     --color-yellow: #c3a12b;
     --color-white: #ffffff;
     --color-black: #000000;
@@ -418,7 +420,7 @@ h6,
 p {
     font-size: var(--font-body-2);
     line-height: var(--line-height-b1);
-    margin: 0 0 40px 0;
+    margin: 0 0 8px 0;
 }
 
 .body-font1 {
@@ -616,7 +618,7 @@ input {
   Helper Classes
 -------------------------*/
 .bg-color-dark {
-    background-color: #1B1919;
+    background-color: #2bc3ec;
 }
 .bg-color-dark-ext {
     background-color: #2bc3ec;
@@ -656,7 +658,7 @@ input {
     width: 50px;
     height: 50px;
     line-height: 50px;
-    background: var(--color-primary);
+    background: var(--color-dark);
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -1051,6 +1053,28 @@ input {
     border-color: var(--color-primary);
 }
 
+.axil-btn.btn-fill-info {
+    background-color: var(--color-info);
+    color: var(--color-white);
+    border: 1px solid var(--color-info);
+    overflow: hidden;
+}
+.axil-btn.btn-fill-info::after {
+    content: "";
+    height: 300px;
+    width: 300px;
+    background-color: var(--color-link);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%) scale(0);
+    -ms-transform: translateY(-50%) translateX(-50%) scale(0);
+    transform: translateY(-50%) translateX(-50%) scale(0);
+    -webkit-transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: -1;
+}
 .axil-btn.btn-fill-primary {
     background-color: var(--color-primary);
     color: var(--color-white);
@@ -1092,7 +1116,7 @@ input {
 }
 
 .axil-btn.btn-fill-white:hover {
-    background-color: var(--color-accent1);
+    background-color: var(--color-info);
     color: var(--color-white);
 }
 
@@ -1321,7 +1345,7 @@ Pagination
 }
 
 .heading-light p {
-    color: var(--color-gray-4);
+    color: var(--color-white);
 }
 
 .heading-left {
@@ -2411,7 +2435,7 @@ Pagination
     position: fixed;
     top: 200px;
     left: 0;
-    background-color: var(--color-primary);
+    background-color: var(--color-black);
     border-radius: 0 30px 30px 0;
     padding: 10px;
     z-index: 5;
@@ -5088,7 +5112,7 @@ Pagination
 }
 
 .services-grid.service-style-2:hover, .services-grid.service-style-2.active {
-    background-color: var(--color-brand);
+    background-color: var(--color-info);
 }
 
 .services-grid.service-style-2:hover .content .more-btn, .services-grid.service-style-2.active .content .more-btn {
@@ -10855,3 +10879,13 @@ html.smooth-scroll {
     color: #c3bebe;
 }
 
+.slick-prev:before,
+.slick-next:before {
+    font-family:initial!important;
+    font-size: 25px!important;
+    background: var(--color-dark);
+    height: 80px!important;
+    width: 80px!important;
+    border-radius: 58%!important;
+    margin: 10px 0px -5px 0px!important;
+}

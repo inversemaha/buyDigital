@@ -203,11 +203,6 @@
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
 
-                    <div class="bg-white rounded shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 200px; height: 70px;">
-                        <img class="rounded" src="/assets/media/logo.png" height="70" alt=""
-                             loading="lazy" />
-                    </div>
-
                 </div>
                 <!--Grid column-->
 

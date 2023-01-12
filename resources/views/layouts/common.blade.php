@@ -203,17 +203,12 @@
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
 
-                    <div class="bg-white rounded shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 200px; height: 70px;">
-                        <img class="rounded" src="/assets/media/logo.png" height="70" alt=""
-                             loading="lazy" />
-                    </div>
-
                 </div>
                 <!--Grid column-->
 
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase text-white mb-4">QUICK LINKS</h5>
+                    <h6 class="text-uppercase text-white mb-3">QUICK LINKS</h6>
 
                     <ul class="list-unstyled">
                         <li class="mb-2">
@@ -234,7 +229,7 @@
 
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase text-white mb-4">SOCIAL LINKS</h5>
+                    <h6 class="text-uppercase text-white mb-3">SOCIAL LINKS</h6>
 
                     <ul class="list-unstyled">
                         <li class="mb-2">
@@ -252,7 +247,7 @@
 
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase text-white mb-4">Contact</h5>
+                    <h6 class="text-uppercase text-white mb-3">Contact</h6>
 
                     <ul class="list-unstyled">
                         <li>

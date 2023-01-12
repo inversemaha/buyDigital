@@ -1,5 +1,5 @@
 @extends('layouts.common')
-@section('title', 'Terms Of Policy')
+@section('title', 'Terms Of Use')
 @section('content')
 
     <!--=====================================-->

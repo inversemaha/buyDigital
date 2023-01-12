@@ -49,8 +49,8 @@
                                 that make finding and communicating with influencers faster, easier and cost effective
                                 for brands. Quickly access real-time ROI and KPI reports to see who the top influencers
                                 are, and the impact they are having with their followers.</p>
-                            <a href="https://www.facebook.com/Influencerhub.bd" target="_blank"
-                               class="axil-btn btn-fill-primary btn-large">Visit Us</a>
+                            <a href="https://www.influencerhubbd.com/" target="_blank"
+                               class="axil-btn btn-fill-info btn-large">Visit Us</a>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                                 motto is to build an ecosystem with effective and transparent relationships between all
                                 publishers and advertisers. Adbliv wants to bring creative and new touches to
                                 advertisements.</p>
-                            <a href="https://www.adbliv.com/" target="_blank" class="axil-btn btn-fill-primary btn-large">Visit Us</a>
+                            <a href="https://www.adbliv.com/" target="_blank" class="axil-btn btn-fill-info btn-large">Visit Us</a>
                         </div>
                         {{--<div class="case-study-counterup">
                             <div class="single-counterup">

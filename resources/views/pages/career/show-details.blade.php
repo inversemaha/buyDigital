@@ -45,7 +45,7 @@
                                 <p>{!! $results->details !!}</p>
                                 <p><b>Apply before :</b> {{date('d-m-Y', strtotime($results->last_apply_date))}}</p>
                             </div>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            <button type="button" class="axil-btn btn-fill-info" data-bs-toggle="modal"
                                     data-bs-target="#myModal">
                                 Apply Now
                             </button>
@@ -82,7 +82,7 @@
                                                        name="image"/>
                                             </div>
                                             <div class="form-group">
-                                                <button type="submit" class="axil-btn btn-fill-primary btn-fluid">
+                                                <button type="submit" class="axil-btn btn-fill-info btn-fluid">
                                                     Submit
                                                 </button>
                                             </div>

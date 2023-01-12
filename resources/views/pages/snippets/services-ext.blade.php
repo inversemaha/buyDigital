@@ -10,7 +10,7 @@
             <div class="col-xl-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
                 <div class="services-grid active">
                     <div class="thumbnail">
-                        <img src="assets/media/icon/icon-29.png" alt="icon">
+                        <img src="assets/media/icon/Media-Buying.png" alt="icon">
                     </div>
                     <div class="content">
                         <h5 class="title"><a href="/find-out-more/media-buying">Media Buying &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h5>
@@ -29,7 +29,7 @@
             <div class="col-xl-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
                 <div class="services-grid">
                     <div class="thumbnail">
-                        <img src="assets/media/icon/icon-36.png" alt="icon">
+                        <img src="assets/media/icon/Creative-Development.png" alt="icon">
                     </div>
                     <div class="content">
                         <h5 class="title"><a href="/find-out-more/creative-development">Creative Development</a></h5>
@@ -47,7 +47,7 @@
             <div class="col-xl-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
                 <div class="services-grid">
                     <div class="thumbnail">
-                        <img src="assets/media/icon/icon-41.png" alt="icon">
+                        <img src="assets/media/icon/Social-Media-Planning.png" alt="icon">
                     </div>
                     <div class="content">
                         <h5 class="title"><a href="/find-out-more/social-media-planning">Social Media Planning</a></h5>
@@ -63,7 +63,7 @@
             <div class="col-xl-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
                 <div class="services-grid">
                     <div class="thumbnail">
-                        <img src="assets/media/icon/icon-34.png" alt="icon">
+                        <img src="assets/media/icon/Strategy-and-Innovation.png" alt="icon">
                     </div>
                     <div class="content">
                         <h5 class="title"><a href="/find-out-more/strategy-and-innovation">Strategy and Innovation</a></h5>
@@ -82,7 +82,7 @@
             <div class="col-xl-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
                 <div class="services-grid">
                     <div class="thumbnail">
-                        <img src="assets/media/icon/icon-40.png" alt="icon">
+                        <img src="assets/media/icon/Web-and-App-development.png" alt="icon">
                     </div>
                     <div class="content">
                         <h5 class="title"><a href="/find-out-more/web-and-app-development">Web and App development</a></h5>
@@ -103,7 +103,7 @@
             <div class="col-xl-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
                 <div class="services-grid">
                     <div class="thumbnail">
-                        <img src="assets/media/icon/icon-42.png" alt="icon">
+                        <img src="assets/media/icon/SEO-and-SEM.png" alt="icon">
                     </div>
                     <div class="content">
                         <h5 class="title"><a href="/find-out-more/SEO-and-SEM">SEO and SEM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h5>
@@ -120,7 +120,7 @@
             <div class="col-xl-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
                 <div class="services-grid">
                     <div class="thumbnail">
-                        <img src="assets/media/icon/icon-38.png" alt="icon">
+                        <img src="assets/media/icon/influencer-marketing.png" alt="icon">
                     </div>
                     <div class="content">
                         <h5 class="title"><a href="/find-out-more/influence-marketinge">Influencer Marketing</a></h5>
@@ -141,7 +141,7 @@
             <div class="col-xl-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
                 <div class="services-grid">
                     <div class="thumbnail">
-                        <img src="assets/media/icon/icon-37.png" alt="icon">
+                        <img src="assets/media/icon/AD-network.png" alt="icon">
                     </div>
                     <div class="content">
                         <h5 class="title"><a href="/find-out-more/AD-network">AD Network &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h5>
@@ -161,7 +161,7 @@
             <div class="col-xl-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
                 <div class="services-grid">
                     <div class="thumbnail">
-                        <img src="assets/media/icon/icon-31.png" alt="icon">
+                        <img src="assets/media/icon/ATL--BTL-Support-or-Offline-activation.png" alt="icon">
                     </div>
                     <div class="content">
                         <h5 class="title"><a href="/find-out-more/offline-activation">ATL/ BTL Support or Offline activation</a></h5>
