@@ -25,7 +25,7 @@
     <!--=====================================-->
     <!--=       Case Study Area Start       =-->
     <!--=====================================-->
-    <section class="section section-padding-equal case-study-featured-area">
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 col-lg-6" data-sal="slide-right" data-sal-duration="800">
@@ -45,7 +45,7 @@
                 </div>
                 <div class="col-xl-7 col-lg-6 d-none d-lg-block" data-sal="slide-left" data-sal-duration="800">
                     <div class="case-study-featured-thumb">
-                        <img src="/assets/media/others/case-study-4.png" alt="travel">
+                        <img src="/assets/media/services/Influencer-Marketing.png" alt="Influencer-Marketing">
                     </div>
                 </div>
             </div>

@@ -815,8 +815,11 @@ input {
     color: #000248;
     width: 55%;
     margin-bottom: 40px;
+    font-size: 46px;
 }
-
+.brand-title {
+    color: var(--color-info);
+}
 @media only screen and (max-width: 991px) {
     .breadcrumb-banner .section-heading .title {
         width: 100%;
@@ -1243,7 +1246,7 @@ Pagination
 }
 
 .section-heading .subtitle {
-    color: var(--color-rose);
+    color: var(--color-info);
     font-weight: 500;
     font-size: 20px;
     font-family: var(--font-primary);
@@ -7366,7 +7369,7 @@ body.op-modal-open {
 }
 
 .axil-mainmenu {
-    padding: 0px 0;
+    padding: 17px 0;
     -webkit-transition: var(--transition);
     transition: var(--transition);
 }

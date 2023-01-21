@@ -195,7 +195,7 @@
     <div class="breadcrum-area breadcrumb-banner">
         <div class="container">
             <div class="section-heading heading-left" data-sal="slide-right" data-sal-duration="1000" data-sal-delay="300">
-                <h1 class="title h2">You can look at our services which are the best solution for your business needs.</h1>
+                <h1 class="title h2">You can look at our <b class="brand-title">services</b> which are the <b class="brand-title">best solution</b> for your business needs.</h1>
                 {{--<p>Give your business a unique logo to stand out from crowd. We’ll create logo specifically for your company.</p>--}}
             </div>
             <div class="banner-thumbnail" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="400">
