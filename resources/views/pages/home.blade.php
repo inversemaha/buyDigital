@@ -56,7 +56,7 @@
     <!--=====================================-->
     <!--=    Partner Section Area Start     =-->
     <!--=====================================-->
-    <section class="section section-padding">
+    <section class="section section-padding-1">
         <div class="container">
             <div class="section-heading">
                 {{--<span class="subtitle">Meet Our</span>--}}

@@ -2,7 +2,7 @@
 <!--=====================================-->
 <!--=      Statistics Area Start      =-->
 <!--=====================================-->
-<section id="testimonial" class="section section-padding bg-color-dark">
+<section id="testimonial" class="section section-padding-1 bg-color-dark">
     <div class="container">
         <div class="section-heading heading-light">
             <h2 class="title">We Are Trusted by <br>More than 300 Clients Worldwide</h2>

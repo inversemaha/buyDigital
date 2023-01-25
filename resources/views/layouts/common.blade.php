@@ -128,14 +128,15 @@
                                 </div>
                             </div>
                             <ul class="mainmenu">
+
                                 <li class="menu-item" data-section-anchor="about">
-                                    <a href="/#about">About</a>
+                                    <a href="/#about" onclick="closeOffcanvas()">About</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="service">
                                     <a href="/services">Services</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="Board Members">
-                                    <a href="/#team">Board Members</a>
+                                    <a href="/#team" onclick="closeOffcanvas()">Board Members</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="sisterConcern">
                                     <a href="/sisters-concern">Sister Concerns</a>
@@ -144,7 +145,7 @@
                                     <a href="/career/board">Career</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="contact">
-                                    <a href="/#contact">Contact</a>
+                                    <a href="/#contact" onclick="closeOffcanvas()">Contact</a>
                                 </li>
                             </ul>
                         </nav>
@@ -201,13 +202,14 @@
             <!--Grid row-->
             <div class="row my-4">
                 <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h6 class="text-uppercase text-white mb-3">Buy Digital</h6>
+                    <p class="text-justify">We can partner with you to develop your marketing plans and execute winning strategies to generate and convert results to build brands.</p>
                 </div>
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
                     <h6 class="text-uppercase text-white mb-3">QUICK LINKS</h6>
 
                     <ul class="list-unstyled">
@@ -228,25 +230,25 @@
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
                     <h6 class="text-uppercase text-white mb-3">SOCIAL LINKS</h6>
 
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <a href="https://www.facebook.com/buydigitalbd/" class="text-white"><i class="fab fa-facebook-square  px-2"></i>Facebook</a>
+                    <ul class="list-inline">
+                        <li class="list-inline-item mb-1">
+                            <a href="https://www.facebook.com/buydigitalbd/" class="text-white"><i class="fab fa-facebook-square fa-2x px-1"></i></a>
                         </li>
-                        <li class="mb-2">
-                            <a href="https://www.instagram.com/buydigitalbd/" class="text-white"><i class="fab fa-instagram px-2"></i>Instagram </a>
+                        <li class="list-inline-item mb-1">
+                            <a href="https://www.instagram.com/buydigitalbd/" class="text-white"><i class="fab fa-instagram fa-2x px-1"></i></a>
                         </li>
-                        <li class="mb-2">
-                            <a href="https://www.linkedin.com/company/buy-digital-bd/" class="text-white"><i class="fab fa-linkedin px-2"></i>Linkedin</a>
+                        <li class="list-inline-item mb-1">
+                            <a href="https://www.linkedin.com/company/buy-digital-bd/" class="text-white"><i class="fab fa-linkedin fa-2x px-1"></i></a>
                         </li>
                     </ul>
                 </div>
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                     <h6 class="text-uppercase text-white mb-3">Contact</h6>
 
                     <ul class="list-unstyled">
@@ -347,7 +349,228 @@
         $('#offcanvasMenuRight').click(function() {
             $('#aboutID').modal('hide');
         });
+
+
+        function closeOffcanvas() {
+            let closeCanvas = document.querySelector('[data-bs-dismiss="offcanvas"]');
+            closeCanvas.click();
+
+        }
     </script>
 </body>
+
+
+
+
+{{--<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="team-details-content">
+                        <h2 class="title">Zahurul Islam</h2>
+                        <span class="subtitle">Chairman</span>
+                        <ul class="social-share list-unstyled">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team-details-thumb">
+                        <img src="assets/media/team/Zahurul_Islam.png" alt="Board Member"
+                             class="d-block paralax-image" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="team-details-content">
+                        <h2 class="title">Md. Zamshed Ul Islam</h2>
+                        <span class="subtitle">Managing Director</span>
+                        <ul class="social-share list-unstyled">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team-details-thumb">
+                        <img src="assets/media/team/Zamshed-Ul-Islam.png" alt="Board Member"
+                             class="d-block paralax-image" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="team-details-content">
+                        <h2 class="title">K M Aminur Rahman</h2>
+                        <span class="subtitle">Chief Executive Officer</span>
+                        <ul class="social-share list-unstyled">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team-details-thumb">
+                        <img src="assets/media/team/Aminur-Rahman.png" alt="Board Member"
+                             class="d-block paralax-image" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="team-details-content">
+                        <h2 class="title">Md. Manjur Morshed Lincon</h2>
+                        <span class="subtitle">Director</span>
+                        <ul class="social-share list-unstyled">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team-details-thumb">
+                        <img src="assets/media/team/Manjur-Morshed.png" alt="Board Member"
+                             class="d-block paralax-image" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>--}}
+
+<div class="slick-slider recent-post-slide" data-slick='{"infinite": true, "autoplay": true, "arrows": true, "dots": true, "slidesToShow": 2,
+        "responsive": [
+            {
+                "breakpoint": 1199,
+                "settings": {
+                    "slidesToShow": 1
+                }
+            }
+        ]
+        }'>
+    <div class="slick-slide">
+
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="team-details-content">
+                    <h2 class="title">Zahurul Islam</h2>
+                    <span class="subtitle">Chairman</span>
+                    <ul class="social-share list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="team-details-thumb">
+                    <img src="assets/media/team/Zahurul_Islam.png" alt="Board Member"
+                         class="d-block paralax-image" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slick-slide">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="team-details-content">
+                    <h2 class="title">Md. Zamshed Ul Islam</h2>
+                    <span class="subtitle">Managing Director</span>
+                    <ul class="social-share list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="team-details-thumb">
+                    <img src="assets/media/team/Zamshed-Ul-Islam.png" alt="Board Member"
+                         class="d-block paralax-image" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slick-slide">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="team-details-content">
+                    <h2 class="title">K M Aminur Rahman</h2>
+                    <span class="subtitle">Chief Executive Officer</span>
+                    <ul class="social-share list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="team-details-thumb">
+                    <img src="assets/media/team/Aminur-Rahman.png" alt="Board Member"
+                         class="d-block paralax-image" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slick-slide">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="team-details-content">
+                    <h2 class="title">Md. Manjur Morshed Lincon</h2>
+                    <span class="subtitle">Director</span>
+                    <ul class="social-share list-unstyled">
+                        <li><a href="https://www.facebook.com/manjur.lincon" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="team-details-thumb">
+                    <img src="assets/media/team/Manjur-Morshed.png" alt="Board Member"
+                         class="d-block paralax-image" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </html>

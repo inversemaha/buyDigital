@@ -128,14 +128,15 @@
                                 </div>
                             </div>
                             <ul class="mainmenu">
+
                                 <li class="menu-item" data-section-anchor="about">
-                                    <a href="/#about">About</a>
+                                    <a href="/#about" onclick="closeOffcanvas()">About</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="service">
                                     <a href="/services">Services</a>
                                 </li>
-                                <li class="menu-item" data-section-anchor="team">
-                                    <a href="/#team">Board Members</a>
+                                <li class="menu-item" data-section-anchor="Board Members">
+                                    <a href="/#team" onclick="closeOffcanvas()">Board Members</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="sisterConcern">
                                     <a href="/sisters-concern">Sister Concerns</a>
@@ -144,7 +145,7 @@
                                     <a href="/career/board">Career</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="contact">
-                                    <a href="/#contact">Contact</a>
+                                    <a href="/#contact" onclick="closeOffcanvas()">Contact</a>
                                 </li>
                             </ul>
                         </nav>
@@ -202,7 +203,8 @@
             <div class="row my-4">
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-
+                    <h6 class="text-uppercase text-white mb-3">Buy Digital</h6>
+                    <p class="text-justify">We can partner with you to develop your marketing plans and execute winning strategies to generate and convert results to build brands.</p>
                 </div>
                 <!--Grid column-->
 
@@ -231,15 +233,15 @@
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase text-white mb-4">SOCIAL LINKS</h5>
 
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <a href="https://www.facebook.com/buydigitalbd/" class="text-white"><i class="fab fa-facebook-square  px-2"></i>Facebook</a>
+                    <ul class="list-inline">
+                        <li class="list-inline-item mb-1">
+                            <a href="https://www.facebook.com/buydigitalbd/" class="text-white"><i class="fab fa-facebook-square fa-2x px-1"></i></a>
                         </li>
-                        <li class="mb-2">
-                            <a href="https://www.instagram.com/buydigitalbd/" class="text-white"><i class="fab fa-instagram px-2"></i>Instagram </a>
+                        <li class="list-inline-item mb-1">
+                            <a href="https://www.instagram.com/buydigitalbd/" class="text-white"><i class="fab fa-instagram fa-2x px-1"></i> </a>
                         </li>
-                        <li class="mb-2">
-                            <a href="https://www.linkedin.com/company/buy-digital-bd/" class="text-white"><i class="fab fa-linkedin px-2"></i>Linkedin</a>
+                        <li class="list-inline-item mb-1">
+                            <a href="https://www.linkedin.com/company/buy-digital-bd/" class="text-white"><i class="fab fa-linkedin fa-2x px-1"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -347,6 +349,13 @@
     $('#offcanvasMenuRight').click(function() {
         $('#aboutID').modal('hide');
     });
+
+
+    function closeOffcanvas() {
+        let closeCanvas = document.querySelector('[data-bs-dismiss="offcanvas"]');
+        closeCanvas.click();
+
+    }
 </script>
 </body>
 

@@ -3419,7 +3419,7 @@ Pagination
 }
 
 .banner.banner-style-5 {
-    background-image: url("../media/banner/banner-bg-1.png");
+    background-image: url("../media/banner/banner-bg-1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -5283,7 +5283,7 @@ Pagination
 
 .team-details-content .subtitle {
     display: block;
-    color: var(--color-primary);
+    color: var(--color-info);
     border-bottom: 3px solid;
     font-weight: 700;
     font-size: 22px;
@@ -8397,7 +8397,7 @@ body.op-modal-open {
 }
 
 .blog-list .post-content .title a:hover {
-    color: var(--color-link);
+    color: var(--color-info);
 }
 
 .blog-list .post-content p {
@@ -8420,7 +8420,7 @@ body.op-modal-open {
 }
 
 .blog-list .post-content .more-btn:hover {
-    color: var(--color-link);
+    color: var(--color-info);
 }
 
 .blog-list .post-content .more-btn:hover i {
@@ -8428,7 +8428,7 @@ body.op-modal-open {
 }
 
 .blog-list:hover, .blog-list.active {
-    border-top-color: var(--color-primary);
+    border-top-color: var(--color-info);
 }
 
 .blog-list:hover .post-thumbnail a img, .blog-list.active .post-thumbnail a img {
@@ -10891,4 +10891,18 @@ html.smooth-scroll {
     width: 80px!important;
     border-radius: 58%!important;
     margin: 10px 0px -5px 0px!important;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f0' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f0' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slick-prev{
+    margin-left: 15px !important;
+}
+.slick-next {
+    margin-right: 15px !important;
 }

@@ -1,7 +1,7 @@
 <!--=====================================-->
 <!--=        Service Area Start         =-->
 <!--=====================================-->
-<section id="services" class="section section-padding-2 bg-color-dark">
+<section id="services" class="section section-padding-1 bg-color-dark">
     <div class="container">
         <div class="section-heading heading-light-left">
             <h2 class="title">Services we can help you with</h2>
@@ -123,7 +123,7 @@
                         <img src="assets/media/icon/influencer-marketing.png" alt="icon">
                     </div>
                     <div class="content">
-                        <h5 class="title"><a href="/find-out-more/influence-marketinge">Influencer Marketing</a></h5>
+                        <h5 class="title"><a href="/find-out-more/influence-marketing">Influencer Marketing</a></h5>
                         {{--<p>Are you looking for influencer marketing to promote your brand with reputable influencers and
                             generate hype from social media to mass media? Then you are on the right track! Influencer
                             Hub is one of the leads in influencer marketing in Bangladesh.

@@ -1,4 +1,3 @@
-
 <!--=====================================-->
 <!--=       Client Feedback  Start      =-->
 <!--=====================================-->
@@ -6,7 +5,8 @@
     <div class="container">
         <div class="section-heading heading-left">
             <!-- <span class="subtitle">Feedback</span> -->
-            <br><h2 class="title">Feedback</h2>
+            <br>
+            <h2 class="title">Feedback</h2>
             <p>Here are some user feedback about our services and how they help them achieve their goals.</p>
         </div>
         <div class="slick-slider recent-post-slide" data-slick='{"infinite": true, "autoplay": true, "arrows": true, "dots": true, "slidesToShow": 2,
@@ -36,7 +36,7 @@
             <div class="slick-slide">
                 <div class="blog-list">
                     <div class="post-thumbnail">
-                        <img src="assets/media/images/shurjomukhi.png"  alt="Shurjomukhi Limited">
+                        <img src="assets/media/images/shurjomukhi.png" alt="Shurjomukhi Limited">
                     </div>
                     <div class="post-content">
                         <h5 class="title">Shurjomukhi Limited</h5>

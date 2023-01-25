@@ -128,14 +128,15 @@
                                 </div>
                             </div>
                             <ul class="mainmenu">
+
                                 <li class="menu-item" data-section-anchor="about">
-                                    <a href="/#about">About</a>
+                                    <a href="/#about" onclick="closeOffcanvas()">About</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="service">
                                     <a href="/services">Services</a>
                                 </li>
-                                <li class="menu-item" data-section-anchor="team">
-                                    <a href="/#team">Board Members</a>
+                                <li class="menu-item" data-section-anchor="Board Members">
+                                    <a href="/#team" onclick="closeOffcanvas()">Board Members</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="sisterConcern">
                                     <a href="/sisters-concern">Sister Concerns</a>
@@ -144,7 +145,7 @@
                                     <a href="/career/board">Career</a>
                                 </li>
                                 <li class="menu-item" data-section-anchor="contact">
-                                    <a href="/#contact">Contact</a>
+                                    <a href="/#contact" onclick="closeOffcanvas()">Contact</a>
                                 </li>
                             </ul>
                         </nav>
@@ -195,7 +196,9 @@
     <div class="breadcrum-area breadcrumb-banner">
         <div class="container">
             <div class="section-heading heading-left" data-sal="slide-right" data-sal-duration="1000" data-sal-delay="300">
-                <h1 class="title h2">You can look at our <b class="brand-title">services</b> which are the <b class="brand-title">best solution</b> for your business needs.</h1>
+                <h1 class="title h2">You can look at our <b class="brand-title" style="
+    font-size: 3rem;">services</b> which are <b class="brand-title" style="
+    font-size: 3rem;"> the best solution</b> for your business needs.</h1>
                 {{--<p>Give your business a unique logo to stand out from crowd. We’ll create logo specifically for your company.</p>--}}
             </div>
             <div class="banner-thumbnail" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="400">
@@ -378,6 +381,13 @@
         $('#offcanvasMenuRight').click(function() {
             $('#aboutID').modal('hide');
         });
+
+
+        function closeOffcanvas() {
+            let closeCanvas = document.querySelector('[data-bs-dismiss="offcanvas"]');
+            closeCanvas.click();
+
+        }
     </script>
     </body>
 
