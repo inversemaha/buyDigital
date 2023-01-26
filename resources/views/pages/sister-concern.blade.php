@@ -31,7 +31,7 @@
     <!--=====================================-->
     <!--=      Sister Concern  Area Start       =-->
     <!--=====================================-->
-    <section class="pt--250 pt_lg--200 pt_md--100 pt_sm--80 case-study-page-area">
+    <section class="mt-3 pt_lg--200 pt_md--100 pt_sm--80 case-study-page-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6" data-sal="slide-right" data-sal-duration="1000">

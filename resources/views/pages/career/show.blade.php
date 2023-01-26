@@ -27,13 +27,10 @@
         </ul>
     </div>
 
-
-
-
     <!--=====================================-->
     <!--=        Service Area Start         =-->
 
-    <div class="section section-padding" id="services">
+    <div class="section " id="services">
         <div class="container">
             <div class="row">
                 @foreach($result as $res)

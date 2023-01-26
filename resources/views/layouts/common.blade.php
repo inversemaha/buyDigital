@@ -202,7 +202,7 @@
             <!--Grid row-->
             <div class="row my-4">
                 <!--Grid column-->
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <div class="col-lg-4 col-md-6 mb-md-0">
                     <h6 class="text-uppercase text-white mb-3">Buy Digital</h6>
                     <p class="text-justify">We can partner with you to develop your marketing plans and execute winning strategies to generate and convert results to build brands.</p>
                 </div>
