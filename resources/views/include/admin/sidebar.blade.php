@@ -60,6 +60,14 @@
                         </a>
 
                     </li> <!-- end Dashboard Menu -->
+                    <li class="nav-item ">
+                        <a class="nav-link menu-link {{ Request::is('/dropBox/appliers') ? 'active' : null }}"
+                           href="/admin/dropBox/appliers"
+                           aria-expanded="false" aria-controls="sidebarDashboards">
+                            <i class="mdi mdi-dropbox"></i> <span data-key="t-dashboards">DropBox OF CV</span>
+                        </a>
+
+                    </li> <!-- end Dashboard Menu -->
                 @endif
 
                 <li class="nav-item">

@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminRoleController;
 use App\Http\Controllers\ApplicantController;
 use App\Http\Controllers\CareersController;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\DropboxController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\JobApplyController;
 use App\Http\Controllers\NewsController;
@@ -75,6 +76,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::resource('/careers', CareersController::class);
     Route::resource('/job/appliers', JobApplyController::class);
     Route::get('/applicant-status-update/{id}/{status}', [JobApplyController::class, 'applicantStatusUpdate']);
+
+//Drop Box Management
+    Route::resource('/dropBox/appliers', DropboxController::class);
+    Route::get('/dropbox-applicant-status-update/{id}/{status}', [DropboxController::class, 'dropBoxStatusUpdate']);
 
 });
 

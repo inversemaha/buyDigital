@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Dropbox;
+use App\Models\JobApply;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class DropboxController extends Controller
 {
@@ -14,9 +16,25 @@ class DropboxController extends Controller
      */
     public function index()
     {
-        //
+       $results= Dropbox::get();
+
+        return view("admin.dropBox.show")->with("results", $results);
     }
 
+    public function dropBoxStatusUpdate($id,$status)
+    {
+        // return "ok";
+        try {
+            Dropbox::where('id', $id)->update([
+                'status'=> $status
+            ]);
+            Alert::success('Applicant Status ! ', " Successfully Updated ");
+            return back();
+        } catch (Exception $exception) {
+            Alert::error('Sorry! ', $exception->getMessage());
+            return back();
+        }
+    }
     /**
      * Show the form for creating a new resource.
      *
