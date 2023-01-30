@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Applicant;
+use App\Models\Dropbox;
 use App\Models\JobApply;
 use App\Models\JobPost;
 use Illuminate\Http\Request;
@@ -55,7 +56,6 @@ class ApplicantController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required',
             'phone' => 'required',
-            'email' => 'required',
 
             /*'phone' => 'required|unique:applicants',
             'email' => 'required|unique:applicants',*/
@@ -71,14 +71,14 @@ class ApplicantController extends Controller
                 return back()->withInput();
             }
         }
-            if ($request->hasFile('image')) {
-                $image = $request->file('image');
-                $image_name = time() . '.' . $image->getClientOriginalExtension();
-                $destinationPath = public_path('/uploads/applicant/cv/');
-                $image->move($destinationPath, $image_name);
-                $request->request->add(['cv' => '/uploads/applicant/cv/' . $image_name]);
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $image_name = time() . '.' . $image->getClientOriginalExtension();
+            $destinationPath = public_path('/uploads/applicant/cv/');
+            $image->move($destinationPath, $image_name);
+            $request->request->add(['cv' => '/uploads/applicant/cv/' . $image_name]);
 
-            }
+        }
         //return $request->all();
 
         try {
@@ -104,11 +104,68 @@ class ApplicantController extends Controller
                 return back();
             }
             //return "ok";
-           // Auth::guard('applicant')->loginUsingId($applicantId);
+            // Auth::guard('applicant')->loginUsingId($applicantId);
             Alert::success('Application! ', "Successfully Submit");
             return back();
         } catch (\Exception $exception) {
             Alert::error('Application Failed! ', $exception->getMessage());
+            return back();
+        }
+    }
+
+    public function dropCV(Request $request)
+    {
+        // return $request->all();
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'phone' => 'required',
+
+            /*'phone' => 'required|unique:applicants',
+            'email' => 'required|unique:applicants',*/
+            'image' => 'required|mimes:pdf',
+        ]);
+        if ($validator->fails()) {
+            if ($validator->errors()->has('phone')) {
+                Alert::error('Sorry! ', " Duplicate phone number");
+                return back()->withInput();
+            }
+            if ($validator->errors()->has('email')) {
+                Alert::error('Sorry! ', " Duplicate email number");
+                return back()->withInput();
+            }
+        }
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $image_name = time() . '.' . $image->getClientOriginalExtension();
+            $destinationPath = public_path('/uploads/dropBox/cv/');
+            $image->move($destinationPath, $image_name);
+            $request->request->add(['cv' => '/uploads/dropBox/cv/' . $image_name]);
+
+        }
+        //return $request->all();
+
+        try {
+            $request['password'] = Hash::make("123456");
+            $dropBoxArray = [
+                'name' => $request['name'],
+                'phone' => $request['phone'],
+                'email' => $request['email'],
+                'password' => $request['password'],
+                'cv' => $request['cv'],
+            ];
+            try {
+                Dropbox::create($dropBoxArray);
+            } catch (\Exception $exception) {
+
+                Alert::error('Data Insert Failed! ', $exception->getMessage());
+                return back();
+            }
+            //return "ok";
+            // Auth::guard('applicant')->loginUsingId($applicantId);
+            Alert::success('DropBox! ', "Your CV Successfully Drop");
+            return back();
+        } catch (\Exception $exception) {
+            Alert::error('DropBox Failed! ', $exception->getMessage());
             return back();
         }
     }

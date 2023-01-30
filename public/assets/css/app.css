@@ -725,6 +725,13 @@ input {
     position: relative;
     z-index: 1;
 }
+.breadcrum-area-career {
+    background: var(--gradient-primary);
+    padding: 120px 0 5px;
+    margin-top: -160px;
+    position: relative;
+    z-index: 1;
+}
 
 @media only screen and (max-width: 1199px) {
     .breadcrum-area {
@@ -792,8 +799,8 @@ input {
     }
 }
 
-.breadcrumb-banner {
-    padding: 129px 0 200px;
+.breadcrumb-banner-career {
+    padding: 120px 0 5px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -7202,7 +7209,8 @@ body.op-modal-open {
 
 @media only screen and (max-width: 991px) {
     .axil-header .header-navbar .header-logo img {
-        width: 150px;
+        width: 120px;
+        height: auto !important;
     }
 }
 
@@ -7387,11 +7395,11 @@ body.op-modal-open {
     transition: var(--transition);
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+/*@media only screen and (min-width: 1200px) and (max-width: 1599px) {
     .axil-mainmenu {
         padding: 35px 0;
     }
-}
+}*/
 
 @media only screen and (max-width: 1199px) {
     .axil-mainmenu {
@@ -10933,9 +10941,9 @@ html.smooth-scroll {
 .about-footer {
     padding-right: 120px !important;
 }
-.axil-header .header-navbar .header-logo img {
+/*.axil-header .header-navbar .header-logo img {
     height: auto !important;
-}
+}*/
 /*css for mobile screen*/
 
 @media (max-width:768px)  {
@@ -10943,6 +10951,3 @@ html.smooth-scroll {
         padding-right: 0px !important;
     }
 }
-
-
-

@@ -56,8 +56,8 @@
     <link rel="stylesheet" href="/assets/css/app.css">
     <style>
         .logo-size{
-            height: 60px !important;
-        }
+             height: 75px !important;
+         }
         .mainmenu > li > a {
             color: var(--color-dark);
         }
