@@ -1,4 +1,3 @@
-
 <!--=====================================-->
 <!--=      About Section Start          =-->
 <!--=====================================-->
@@ -27,13 +26,12 @@
 
                 </div>
             </div>
-            <div class="col-xl-5 col-lg-6 d-none d-lg-block sal-animate" data-sal="slide-left"
-                 data-sal-duration="800">
-
+            <div class="col-xl-6 col-lg-6 sal-animate" data-sal="slide-right" data-sal-duration="800">
                 <div class="case-study-featured-thumb">
                     <img src="assets/media/images/home2.jpeg" style="height: 60% !important;" alt="travel">
                 </div>
             </div>
+
         </div>
     </div>
 </section>

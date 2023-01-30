@@ -94,9 +94,6 @@
             </section>
 
         </div>
-        <ul class="shape-group-4 list-unstyled">
-            <li class="shape-1"><img src="assets/media/others/bubble-1.png" alt="Bubble"></li>
-        </ul>
     </section>
 
     <script>
@@ -105,7 +102,7 @@
                 slidesToShow: 6,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 1500,
+                autoplaySpeed: 15099990,
                 arrows: true,
                 dots: false,
                 pauseOnHover: false,
