@@ -46,9 +46,9 @@
                             <span class="subtitle">Chairman</span>
                             <ul class="social-share list-unstyled">
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                {{--<li><a href="#"><i class="fab fa-twitter"></i></a></li>--}}
                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                {{--<li><a href="#"><i class="fab fa-instagram"></i></a></li>--}}
                             </ul>
                         </div>
                     </div>
@@ -63,10 +63,9 @@
                             <h4 class="title">Md. Zamshed Ul Islam</h4>
                             <span class="subtitle">Managing Director</span>
                             <ul class="social-share list-unstyled">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/xamshed.islam" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                {{--<li><a href="#"><i class="fab fa-twitter"></i></a></li>--}}
+                                <li><a href="https://www.linkedin.com/in/md-zamshed-islam-253b67151" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -83,10 +82,10 @@
                             <h4 class="title">K M Aminur Rahman</h4>
                             <span class="subtitle">Chief Executive Officer</span>
                             <ul class="social-share list-unstyled">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/km.aminur.rahman" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                {{--<li><a href="#"><i class="fab fa-twitter"></i></a></li>--}}
+                                <li><a href="https://www.linkedin.com/in/kmaminurrahman/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                {{--<li><a href="#"><i class="fab fa-instagram"></i></a></li>--}}
                             </ul>
                         </div>
                     </div>
@@ -103,9 +102,9 @@
                             <ul class="social-share list-unstyled">
                                 <li><a href="https://www.facebook.com/manjur.lincon" target="_blank"><i
                                             class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                {{--<li><a href="#"><i class="fab fa-twitter"></i></a></li>--}}
+                                <li><a href="https://www.linkedin.com/in/manjur-morshed-2567682b" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                {{--<li><a href="#"><i class="fab fa-instagram"></i></a></li>--}}
                             </ul>
                         </div>
                     </div>
